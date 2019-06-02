@@ -819,6 +819,13 @@ border-radius: 25px;
 
 .navbar-brand {
   z-index: 200;
+
+}
+
+#header_title{
+  margin:0;
+  z-index: 200;
+  font-weight: 200;
 }
 
 .navbar-collapse {
