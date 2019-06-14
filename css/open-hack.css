@@ -1,0 +1,39 @@
+.head-section {
+  background-image: url('../images/open-hack-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.head-section .title {
+  text-shadow: 1px 1px black;
+  font-weight: 700;
+}
+
+section header.section-header {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+section.segment {
+  max-height: 60vh;
+  height: 500px;
+  flex-direction: row;
+}
+
+section.segment-right {
+  flex-direction: row-reverse;
+}
+
+section.segment > * {
+  flex: 1;
+}
+
+section.segment .text {
+  display: flex;
+  align-items: center;
+}
+
+section.segment .image svg {
+  height: 70%;
+  padding: 30px;
+}
