@@ -14,14 +14,26 @@ section header.section-header {
   padding-left: 30px;
 }
 
+section header.section-header .buttons  button {
+  padding: 15px 50px;
+}
 section.segment {
   max-height: 60vh;
   height: 500px;
   flex-direction: row;
 }
 
+section.segment > div {
+  width: 50%;
+  display: inline-block;
+}
+
 section.segment-right {
   flex-direction: row-reverse;
+}
+
+section.segment p {
+  margin: auto;
 }
 
 section.segment > * {
@@ -31,6 +43,7 @@ section.segment > * {
 section.segment .text {
   display: flex;
   align-items: center;
+  padding: 50px;
 }
 
 section.segment .image svg {
