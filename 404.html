@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>404</title>
+    <title>DSC - 404 Error</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="DSC University Name"/>
     <meta name="description" content="Access exclusive content from all across the web to make you a better developer. All the content is free.">
@@ -41,31 +41,18 @@
     </script>
     <!-- End Google Analytics -->
     <script>
-        // var routes = {
-        //     "/python": function() {
-        //         window.location.replace(
-        //             "https://docs.google.com/forms/d/e/1FAIpQLScOifxhqbDKTEjcOxCi54YXYPNELUlg3sCr-rDyXZruUWlf-g/viewform"
-        //         );
-        //     },
-        //     "/web": function() {
-        //         window.location.replace(
-        //             "https://docs.google.com/forms/d/e/1FAIpQLSfNqCuIpqT6GEFg3nTMT5HHkGOCAHye_QxW2irIikU3JGZYtg/viewform"
-        //         );
-        //     },
-        //     "/design": function() {
-        //         window.location.replace(
-        //             "https://docs.google.com/forms/d/e/1FAIpQLScOWq3A6zGtoKcR0DVNnJ2nYOUei12qMNL8eR16sBGePq0kuA/viewform"
-        //         );
-        //     },
-        //     "/open-hack-week": function() {
-        //         window.location.href = "/open-hack-week.html";
-        //     }
-        // };
-        // if (routes[window.location.pathname]) {
-        //     routes[window.location.pathname]();
-        // }
+        (function(){
+            var routes = {
+                "/python": "https://docs.google.com/forms/d/e/1FAIpQLScOifxhqbDKTEjcOxCi54YXYPNELUlg3sCr-rDyXZruUWlf-g/viewform",
+                "/web":"https://docs.google.com/forms/d/e/1FAIpQLSfNqCuIpqT6GEFg3nTMT5HHkGOCAHye_QxW2irIikU3JGZYtg/viewform",
+                "/design": "https://docs.google.com/forms/d/e/1FAIpQLScOWq3A6zGtoKcR0DVNnJ2nYOUei12qMNL8eR16sBGePq0kuA/viewform",
+                "/open-hack-week": "/open-hack-week.html"
+            };
+            if (routes[window.location.pathname]) {
+                location.replace(routes[window.location.pathname]);
+            }
+        })();
     </script>
-    <script src="js/vendors/ghspa.js"></script>
 </head>
 
 
