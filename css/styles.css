@@ -2159,3 +2159,7 @@ hr{
 .err-p{
   font-size: 60px;
 }
+
+#hidden {
+  opacity: 0;
+}
