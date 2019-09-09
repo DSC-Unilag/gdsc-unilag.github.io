@@ -181,7 +181,10 @@ const routes = {
 		window.location.replace(
 			"https://docs.google.com/forms/d/e/1FAIpQLScOWq3A6zGtoKcR0DVNnJ2nYOUei12qMNL8eR16sBGePq0kuA/viewform"
 		);
-	}
+  },
+  '/open-hack-week': () => {
+    window.location.href = '/open-hack-week.html'
+  }
 };
 
 if (window.location.pathname !== "/" && routes[window.location.pathname]) {
