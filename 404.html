@@ -41,15 +41,31 @@
     </script>
     <!-- End Google Analytics -->
     <script>
-        var segmentCount = 1;
-        var l = window.location;
-        l.replace(
-            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-            l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
-            l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
-            (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-            l.hash
-        );
+        (function(){
+            var routes = {
+            "/python": function() {
+                window.location.replace(
+                    "https://docs.google.com/forms/d/e/1FAIpQLScOifxhqbDKTEjcOxCi54YXYPNELUlg3sCr-rDyXZruUWlf-g/viewform"
+                );
+            },
+            "/web": function() {
+                window.location.replace(
+                    "https://docs.google.com/forms/d/e/1FAIpQLSfNqCuIpqT6GEFg3nTMT5HHkGOCAHye_QxW2irIikU3JGZYtg/viewform"
+                );
+            },
+            "/design": function() {
+                window.location.replace(
+                    "https://docs.google.com/forms/d/e/1FAIpQLScOWq3A6zGtoKcR0DVNnJ2nYOUei12qMNL8eR16sBGePq0kuA/viewform"
+                );
+            },
+            "/open-hack-week": function() {
+                window.location.href = "/open-hack-week.html";
+            }
+        };
+        if (routes[window.location.pathname]) {
+            routes[window.location.pathname]();
+        }
+        })();
     </script>
 </head>
 
