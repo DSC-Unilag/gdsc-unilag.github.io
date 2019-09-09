@@ -48,9 +48,10 @@
                 "/dsc-unilag.github.io/design": "https://docs.google.com/forms/d/e/1FAIpQLScOWq3A6zGtoKcR0DVNnJ2nYOUei12qMNL8eR16sBGePq0kuA/viewform",
                 "/dsc-unilag.github.io/open-hack-week": "/open-hack-week.html"
             };
-            if (routes[window.location.pathname]) {
-                location.replace(routes[window.location.pathname]);
+            if (routes[location.pathname]) {
+                location.replace(routes[location.pathname]);
             }
+            console.log(location.pathname);
             document.body.style.display = 'block';
         });
     </script>
