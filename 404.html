@@ -41,7 +41,6 @@
     </script>
     <!-- End Google Analytics -->
     <script>
-        window.addEventListener('DOMContentLoaded', function() {
             var routes = {
                 "/dsc-unilag.github.io/python": function() {
                     window.location.replace(
@@ -65,7 +64,6 @@
             if (routes[window.location.pathname]) {
                 routes[window.location.pathname]();
             }
-        });
     </script>
 </head>
 
