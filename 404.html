@@ -41,34 +41,25 @@
     </script>
     <!-- End Google Analytics -->
     <script>
-        var routes = {
-            "/python": function() {
-                window.location.replace(
-                    "https://docs.google.com/forms/d/e/1FAIpQLScOifxhqbDKTEjcOxCi54YXYPNELUlg3sCr-rDyXZruUWlf-g/viewform"
-                );
-            },
-            "/web": function() {
-                window.location.replace(
-                    "https://docs.google.com/forms/d/e/1FAIpQLSfNqCuIpqT6GEFg3nTMT5HHkGOCAHye_QxW2irIikU3JGZYtg/viewform"
-                );
-            },
-            "/design": function() {
-                window.location.replace(
-                    "https://docs.google.com/forms/d/e/1FAIpQLScOWq3A6zGtoKcR0DVNnJ2nYOUei12qMNL8eR16sBGePq0kuA/viewform"
-                );
-            },
-            "/open-hack-week": function() {
-                window.location.href = "/open-hack-week.html";
-            }
-        };
-        if (routes[window.location.pathname]) {
-            routes[window.location.pathname]();
-        }
+        (function(){
+            window.addEventListener('DOMContentLoaded', function(){
+                var routes = {
+                    "/dsc-unilag.github.io/python": "https://docs.google.com/forms/d/e/1FAIpQLScOifxhqbDKTEjcOxCi54YXYPNELUlg3sCr-rDyXZruUWlf-g/viewform",
+                    "/dsc-unilag.github.io/web":"https://docs.google.com/forms/d/e/1FAIpQLSfNqCuIpqT6GEFg3nTMT5HHkGOCAHye_QxW2irIikU3JGZYtg/viewform",
+                    "/dsc-unilag.github.io/design": "https://docs.google.com/forms/d/e/1FAIpQLScOWq3A6zGtoKcR0DVNnJ2nYOUei12qMNL8eR16sBGePq0kuA/viewform",
+                    "/dsc-unilag.github.io/open-hack-week": "/open-hack-week.html"
+                };
+                if (routes[window.location.pathname]) {
+                    location.replace(routes[window.location.pathname]);
+                }
+                document.body.style.display = 'block';
+            });
+        })();
     </script>
 </head>
 
 
-    <body class="x-hidden has-sticky-header">
+    <body class="x-hidden has-sticky-header" id="hidden">
 <nav class="navbar navbar-expand-lg fixed-top custom-menu custom-menu__light">
     <div class="container">
         <a class="navbar-brand" href="#">
