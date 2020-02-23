@@ -6,10 +6,11 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
+    "redirects": [
       {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "/seg",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSclEeMOxLYw9mht1MaIGfF8Q1g5LWHXp-OXC9ao8kMl-J2Ywg/viewform",
+        "type": 301
       }
     ]
   }
