@@ -27,11 +27,37 @@
         "destination": "https://docs.google.com/forms/d/e/1FAIpQLSfSquSHDKC-v5mQiKOOFTV7d-9Y4VWl3xjhncnVrW6SGsPMlQ/viewform",
         "type": 301
       },
+{
+        "source": "/attend",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSdCl8Xxo4K8MR4RUHMZQKQGDpmoxLprurUMdGpI9kFiSINJPA/viewform",
+        "type": 301
+      },
       {
         "source": "/sdd",
         "destination": "https://www.meetup.com/GDG-Unilag/events/268944555/",
         "type": 301
-      }	
+      },
+      {
+        "source": "/iwd",
+        "destination": "https://www.meetup.com/GDG-Unilag/events/269131739/",
+        "type": 301
+      },
+	     {
+        "source": "/live",
+        "destination": "https://www.meetup.com/GDG-Unilag/events/269131739/",
+        "type": 301
+      },
+      {
+        "source": "/IWD",
+        "destination": "https://www.meetup.com/GDG-Unilag/events/269131739/",
+        "type": 301
+      },
+      {
+        "source": "/",
+        "destination": "https://dscunilag.dev",
+        "type": 301
+      
+      }
     ]
   }
 }
