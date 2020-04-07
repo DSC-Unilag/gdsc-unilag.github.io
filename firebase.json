@@ -55,8 +55,7 @@
       {
         "source": "/",
         "destination": "https://dscunilag.dev",
-        "type": 301
-      
+        "type": 301  
       }
     ]
   }
