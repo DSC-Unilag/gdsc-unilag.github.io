@@ -48,6 +48,11 @@
         "type": 301
       },
       {
+        "source": "/tflive",
+        "destination": "https://www.meetup.com/GDG-Unilag/events/270768341/",
+        "type": 301
+      },
+      {
         "source": "/IWD",
         "destination": "https://www.meetup.com/GDG-Unilag/events/269131739/",
         "type": 301
