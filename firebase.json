@@ -44,7 +44,7 @@
       },
 	     {
         "source": "/live",
-        "destination": "https://meet.jit.si/dscunilag",
+        "destination": "https://www.meetup.com/GDG-Unilag/events/272075660/",
         "type": 301
       },
       {
