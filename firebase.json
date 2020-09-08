@@ -61,6 +61,11 @@
         "source": "/",
         "destination": "https://dscunilag.dev",
         "type": 301  
+      },
+      {
+        "source": "/studygroup",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSeFAavru5RTCV4ZmVAp-mniLodlGsQ1VTW6aNrCSDiJwsoxVg/viewform",
+        "type": 301
       }
     ]
   }
