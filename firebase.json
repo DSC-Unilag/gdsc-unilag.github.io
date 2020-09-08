@@ -1,0 +1,72 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/seg",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSclEeMOxLYw9mht1MaIGfF8Q1g5LWHXp-OXC9ao8kMl-J2Ywg/viewform",
+        "type": 301
+      },
+      {
+        "source": "/whatsapp",
+        "destination": "https://chat.whatsapp.com/GJxeTQiYzZ3K25qt1JWFmu",
+        "type": 301
+      },
+      {
+        "source": "/slack",
+        "destination": "https://join.slack.com/t/dscunilag/shared_invite/zt-ai1jj62u-Dib__CFbcPSSiNafxhacGw",
+        "type": 301
+      },
+	{
+        "source": "/sossa",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSfSquSHDKC-v5mQiKOOFTV7d-9Y4VWl3xjhncnVrW6SGsPMlQ/viewform",
+        "type": 301
+      },
+{
+        "source": "/attend",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSdCl8Xxo4K8MR4RUHMZQKQGDpmoxLprurUMdGpI9kFiSINJPA/viewform",
+        "type": 301
+      },
+      {
+        "source": "/sdd",
+        "destination": "https://www.meetup.com/GDG-Unilag/events/268944555/",
+        "type": 301
+      },
+      {
+        "source": "/iwd",
+        "destination": "https://www.meetup.com/GDG-Unilag/events/269131739/",
+        "type": 301
+      },
+	     {
+        "source": "/live",
+        "destination": "https://www.meetup.com/GDG-Unilag/events/272075660/",
+        "type": 301
+      },
+      {
+        "source": "/tflive",
+        "destination": "https://www.meetup.com/GDG-Unilag/events/270768341/",
+        "type": 301
+      },
+      {
+        "source": "/IWD",
+        "destination": "https://www.meetup.com/GDG-Unilag/events/269131739/",
+        "type": 301
+      },
+      {
+        "source": "/",
+        "destination": "https://dscunilag.dev",
+        "type": 301  
+      },
+      {
+        "source": "/studygroup",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSeFAavru5RTCV4ZmVAp-mniLodlGsQ1VTW6aNrCSDiJwsoxVg/viewform",
+        "type": 301
+      }
+    ]
+  }
+}

@@ -23,23 +23,7 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- Google Analytics -->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-124904500-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <!-- End Google Analytics -->
+   
     <script>
         window.addEventListener('DOMContentLoaded', function(){
             var routes = {
@@ -47,7 +31,20 @@
                 "/web":"https://docs.google.com/document/d/1PwlQZHltm7iOIPIcEGlU4kZujOMvV__mY4Q7o4ysIDs/edit?usp=drivesdk",
                 "/design": "https://docs.google.com/document/d/1PwlQZHltm7iOIPIcEGlU4kZujOMvV__mY4Q7o4ysIDs/edit?usp=drivesdk",
                 '/mobile': "https://docs.google.com/document/d/1PwlQZHltm7iOIPIcEGlU4kZujOMvV__mY4Q7o4ysIDs/edit?usp=drivesdk",
-                "/open-hack-week": "/open-hack-week.html"
+                "/mlh": "https://organize.mlh.io/participants/events/1723-dsc-unilag-local-hack-day",
+                "/hacktoberfest": "https://www.meetup.com/GDG-Unilag/events/265235040/",
+                "/classes": "https://docs.google.com/document/d/1PwlQZHltm7iOIPIcEGlU4kZujOMvV__mY4Q7o4ysIDs/edit?usp=drivesdk",
+                "/class": "https://docs.google.com/document/d/1PwlQZHltm7iOIPIcEGlU4kZujOMvV__mY4Q7o4ysIDs/edit?usp=drivesdk",
+                "/join": "https://bit.ly/unilagdsc",
+                "/holiday": "https://docs.google.com/forms/d/e/1FAIpQLSdvArTckiy4KFYgw-aRWlxkEnV2d5SdgkSIvQjrqw_tnPJMjw/viewform",
+                "/slack": "https://join.slack.com/t/dscunilag/shared_invite/zt-ai1jj62u-Dib__CFbcPSSiNafxhacGw",
+                "/foodfest": "https://docs.google.com/forms/d/e/1FAIpQLSfUcL67RflMdP1ujEGC9F7Qi5tsiSeMIBrfGy8UxDLt39zB3A/viewform",
+                "/schedule": "https://docs.google.com/document/d/1hOtbNdAmWuzwrLN4YqlRonL2MjTOobGyMA8wl_azvZw/edit?usp=sharing",
+                "/whatsapp": "https://chat.whatsapp.com/GJxeTQiYzZ3K25qt1JWFmu",
+                "/csj": " https://go.qwiklabs.com/cloud-study-jams-2019",
+                "/live": "https://www.meetup.com/GDG-Unilag/events/272075660/",
+                "/meetup": "https://www.meetup.com/GDG-Unilag/events/267723154",
+                "/studygroup": "https://docs.google.com/forms/d/e/1FAIpQLSeFAavru5RTCV4ZmVAp-mniLodlGsQ1VTW6aNrCSDiJwsoxVg/viewform?usp=sf_link",
             };
             if (routes[location.pathname]) {
                 location.replace(routes[location.pathname]);
