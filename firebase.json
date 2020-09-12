@@ -66,6 +66,11 @@
         "source": "/studygroup",
         "destination": "https://docs.google.com/forms/d/e/1FAIpQLSeFAavru5RTCV4ZmVAp-mniLodlGsQ1VTW6aNrCSDiJwsoxVg/viewform",
         "type": 301
+      },
+      {
+        "source": "/infosession",
+        "destination": "https://dsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-info-session-by-developer-student-clubs-university-of-lagos/",
+        "type": 301
       }
     ]
   }
