@@ -66,7 +66,22 @@
         "source": "/studygroup",
         "destination": "https://docs.google.com/forms/d/e/1FAIpQLSeFAavru5RTCV4ZmVAp-mniLodlGsQ1VTW6aNrCSDiJwsoxVg/viewform",
         "type": 301
+      },
+      {
+        "source": "/cloudsession",
+        "destination": "https://dsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-cloud-session/",
+        "type": 301
+      },
+      {
+        "source": "/hacktoberfest",
+        "destination": "https://organize.mlh.io/participants/events/4421-hacktoberfest-online-meetup-in-university-of-lagos",
+        "type": 301
+      },
+      {
+        "source": "/gitworkshop",
+        "destination": "https://dsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-git-and-github-workshop/#/",
+        "type": 301
       }
-    ]
+	]
   }
 }
