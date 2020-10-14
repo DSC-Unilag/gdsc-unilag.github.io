@@ -81,6 +81,11 @@
         "source": "/gitworkshop",
         "destination": "https://dsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-git-and-github-workshop/#/",
         "type": 301
+      },
+      {
+        "source": "/telegram",
+        "destination": "https://t.me/joinchat/HMc0ERQqermzdYDXV2lC-w",
+        "type": 301
       }
 	]
   }
