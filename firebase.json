@@ -86,7 +86,32 @@
         "source": "/telegram",
         "destination": "https://t.me/joinchat/HMc0ERQqermzdYDXV2lC-w",
         "type": 301
+      },
+      {
+        "source": "/checkup",
+        "destination": "https://dsc.community.dev/e/m5mwkf/",
+        "type": 301
+      },
+      {
+        "source": "/asjbeginner",
+        "destination": "https://dsc.community.dev/e/mbb9rt/",
+        "type": 301
+      },
+      {
+        "source": "/opensource",
+        "destination": "https://dsc.community.dev/e/mby2yb/",
+        "type": 301
+      },
+      {
+        "source": "/showcase",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSfjLq69BuPocWr2tr6unq0ke6XeuxV-NzkL7WJ6HLvRjrbvBg/viewform?usp=sf_link",
+        "type": 301
+      },
+      {
+        "source": "/feedback",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSeCSOAxToCCfCQ-8rgNs-sBmyQ8rCoSzh40msE34oBYfjsfog/viewform?usp=sf_link",
+        "type": 301
       }
-	]
+	] 
   }
 }
