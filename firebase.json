@@ -64,7 +64,7 @@
       },
       {
         "source": "/studygroup",
-        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSeFAavru5RTCV4ZmVAp-mniLodlGsQ1VTW6aNrCSDiJwsoxVg/viewform",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSfDeIzAQZXEhdmzIUtlVSDIHuptfp1idBqzLuq-zXP7zdD96Q/viewform?usp=sf_link",
         "type": 301
       },
       {
@@ -89,7 +89,7 @@
       },
       {
         "source": "/checkup",
-        "destination": "https://dsc.community.dev/e/m5mwkf/",
+        "destination": "https://dsc.community.dev/e/mgb6ud/",
         "type": 301
       },
       {
@@ -120,6 +120,11 @@
       {
         "source": "/guidelines",
         "destination": "https://docs.google.com/document/d/1BuBby78vTFkBAGAQbImWyJF-x-1THpnASHrFx5NAr-A/edit",
+        "type": 301
+      },
+      {
+        "source": "/youtube",
+        "destination": "https://www.youtube.com/channel/UCcYCdjq0456098v_XA_0xBg",
         "type": 301
       }
 	] 
