@@ -126,6 +126,11 @@
         "source": "/youtube",
         "destination": "https://www.youtube.com/channel/UCcYCdjq0456098v_XA_0xBg",
         "type": 301
+      },
+      {
+        "source": "/eventslides",
+        "destination": "https://docs.google.com/document/d/1DMvmUpY5Gz_CtMzGD26TTM6A_-mteIMS-HxglPXpLfs/edit?usp=drivesdk",
+        "type": 301
       }
 	] 
   }
