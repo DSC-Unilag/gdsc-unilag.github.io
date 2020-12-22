@@ -59,7 +59,72 @@
       },
       {
         "source": "/studygroup",
-        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSeFAavru5RTCV4ZmVAp-mniLodlGsQ1VTW6aNrCSDiJwsoxVg/viewform",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSfDeIzAQZXEhdmzIUtlVSDIHuptfp1idBqzLuq-zXP7zdD96Q/viewform?usp=sf_link",
+        "type": 301
+      },
+      {
+        "source": "/cloudsession",
+        "destination": "https://dsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-cloud-session/",
+        "type": 301
+      },
+      {
+        "source": "/hacktoberfest",
+        "destination": "https://organize.mlh.io/participants/events/4421-hacktoberfest-online-meetup-in-university-of-lagos",
+        "type": 301
+      },
+      {
+        "source": "/gitworkshop",
+        "destination": "https://dsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-git-and-github-workshop/#/",
+        "type": 301
+      },
+      {
+        "source": "/telegram",
+        "destination": "https://t.me/joinchat/HMc0ERQqermzdYDXV2lC-w",
+        "type": 301
+      },
+      {
+        "source": "/checkup",
+        "destination": "https://dsc.community.dev/e/mgb6ud/",
+        "type": 301
+      },
+      {
+        "source": "/asjbeginner",
+        "destination": "https://dsc.community.dev/e/mbb9rt/",
+        "type": 301
+      },
+      {
+        "source": "/opensource",
+        "destination": "https://dsc.community.dev/e/mby2yb/",
+        "type": 301
+      },
+      {
+        "source": "/showcase",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSfjLq69BuPocWr2tr6unq0ke6XeuxV-NzkL7WJ6HLvRjrbvBg/viewform?usp=sf_link",
+        "type": 301
+      },
+      {
+        "source": "/feedback",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSeCSOAxToCCfCQ-8rgNs-sBmyQ8rCoSzh40msE34oBYfjsfog/viewform?usp=sf_link",
+        "type": 301
+      },
+      {
+        "source": "/tech",
+        "destination": "https://dsc.community.dev/e/m4dfhc/",
+        "type": 301
+      },
+      {
+        "source": "/guidelines",
+        "destination": "https://docs.google.com/document/d/1BuBby78vTFkBAGAQbImWyJF-x-1THpnASHrFx5NAr-A/edit",
+        "type": 301
+      },
+      {
+        "source": "/youtube",
+        "destination": "https://www.youtube.com/channel/UCcYCdjq0456098v_XA_0xBg",
+        "type": 301
+      },
+      {
+        "source": "/eventslides",
+        "destination": "https://docs.google.com/document/d/1DMvmUpY5Gz_CtMzGD26TTM6A_-mteIMS-HxglPXpLfs/edit?usp=drivesdk",
         "type": 301
       },
       {
@@ -67,6 +132,6 @@
         "destination": "https://dsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-info-session-by-developer-student-clubs-university-of-lagos/",
         "type": 301
       }
-    ]
+	] 
   }
 }
