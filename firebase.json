@@ -6,6 +6,8 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "cleanUrls": true,
+    "trailingSlash": false,
     "redirects": [
       {
         "source": "/seg",
@@ -58,6 +60,11 @@
         "type": 301
       },
       {
+        "source": "/hacktoberfest",
+        "destination": "https://organize.mlh.io/participants/events/4421-hacktoberfest-online-meetup-in-university-of-lagos",
+        "type": 301
+      },
+      {
         "source": "/studygroup",
         "destination": "https://docs.google.com/forms/d/e/1FAIpQLSfDeIzAQZXEhdmzIUtlVSDIHuptfp1idBqzLuq-zXP7zdD96Q/viewform?usp=sf_link",
         "type": 301
@@ -65,11 +72,6 @@
       {
         "source": "/cloudsession",
         "destination": "https://dsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-cloud-session/",
-        "type": 301
-      },
-      {
-        "source": "/hacktoberfest",
-        "destination": "https://organize.mlh.io/participants/events/4421-hacktoberfest-online-meetup-in-university-of-lagos",
         "type": 301
       },
       {
@@ -132,6 +134,6 @@
         "destination": "https://dsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-info-session-by-developer-student-clubs-university-of-lagos/",
         "type": 301
       }
-	] 
+	  ] 
   }
 }
