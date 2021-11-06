@@ -10,6 +10,16 @@
     "trailingSlash": false,
     "redirects": [
       {
+        "source": "/join",
+        "destination": "https://gdsc.community.dev/university-of-lagos",
+        "type": 301
+      },
+      {
+        "source": "/form",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSdrWVVjjFkqBTXYDLTq0ET2eopD_R2CH-CCtFpvoziimqRW_Q/viewform",
+        "type": 301
+      },
+      {
         "source": "/seg",
         "destination": "https://docs.google.com/forms/d/e/1FAIpQLSclEeMOxLYw9mht1MaIGfF8Q1g5LWHXp-OXC9ao8kMl-J2Ywg/viewform",
         "type": 301
