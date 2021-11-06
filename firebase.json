@@ -20,6 +20,11 @@
         "type": 301
       },
       {
+        "source": "community-guidelines",
+        "destination": "https://developers.google.com/community-guidelines",
+        "type": 301
+      },
+      {
         "source": "/seg",
         "destination": "https://docs.google.com/forms/d/e/1FAIpQLSclEeMOxLYw9mht1MaIGfF8Q1g5LWHXp-OXC9ao8kMl-J2Ywg/viewform",
         "type": 301
@@ -76,7 +81,7 @@
       },
       {
         "source": "/studygroup",
-        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSfDeIzAQZXEhdmzIUtlVSDIHuptfp1idBqzLuq-zXP7zdD96Q/viewform?usp=sf_link",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSdedgEYVHLn62-nKVfaNUki3RAs5JkPTyZ-JanZyCOMdQcX2Q/viewform?usp=sf_link",
         "type": 301
       },
       {
