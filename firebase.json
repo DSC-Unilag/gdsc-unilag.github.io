@@ -130,6 +130,11 @@
         "type": 301
       },
       {
+        "source": "/career",
+        "destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-gdsc-unilag-career-series/",
+        "type": 301
+      },
+      {
         "source": "/guidelines",
         "destination": "https://docs.google.com/document/d/1BuBby78vTFkBAGAQbImWyJF-x-1THpnASHrFx5NAr-A/edit",
         "type": 301
