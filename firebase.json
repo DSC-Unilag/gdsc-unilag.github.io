@@ -14,6 +14,11 @@
         "destination": "https://gdsc.community.dev/university-of-lagos",
         "type": 301
       },
+	{
+        "source": "/feedback",
+        "destination": "https://forms.gle/LCVo8bBmEgz6LiRy7",
+        "type": 301
+      },
       {
         "source": "/form",
         "destination": "https://docs.google.com/forms/d/e/1FAIpQLSdrWVVjjFkqBTXYDLTq0ET2eopD_R2CH-CCtFpvoziimqRW_Q/viewform",
