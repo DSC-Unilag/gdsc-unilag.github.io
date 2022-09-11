@@ -1,164 +1,56 @@
 {
-  "hosting": {
-    "public": ".",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "cleanUrls": true,
-    "trailingSlash": false,
-    "redirects": [
-      {
-        "source": "/join",
-        "destination": "https://gdsc.community.dev/university-of-lagos",
-        "type": 301
-      },
-	{
-        "source": "/feedback",
-        "destination": "https://forms.gle/LCVo8bBmEgz6LiRy7",
-        "type": 301
-      },
-      {
-        "source": "/form",
-        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSdrWVVjjFkqBTXYDLTq0ET2eopD_R2CH-CCtFpvoziimqRW_Q/viewform",
-        "type": 301
-      },
-      {
-        "source": "community-guidelines",
-        "destination": "https://developers.google.com/community-guidelines",
-        "type": 301
-      },
-      {
-        "source": "/seg",
-        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSclEeMOxLYw9mht1MaIGfF8Q1g5LWHXp-OXC9ao8kMl-J2Ywg/viewform",
-        "type": 301
-      },
-      {
-        "source": "/whatsapp",
-        "destination": "https://chat.whatsapp.com/H3pcX0I9X310JVaPgU2SPD",
-        "type": 301
-      },
-      {
-        "source": "/slack",
-        "destination": "https://join.slack.com/t/dscunilag/shared_invite/zt-ai1jj62u-Dib__CFbcPSSiNafxhacGw",
-        "type": 301
-      },
-	    {
-        "source": "/sossa",
-        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSfSquSHDKC-v5mQiKOOFTV7d-9Y4VWl3xjhncnVrW6SGsPMlQ/viewform",
-        "type": 301
-      },
-      {
-        "source": "/attend",
-        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSdCl8Xxo4K8MR4RUHMZQKQGDpmoxLprurUMdGpI9kFiSINJPA/viewform",
-        "type": 301
-      },
-      {
-        "source": "/sdd",
-        "destination": "https://www.meetup.com/GDG-Unilag/events/268944555/",
-        "type": 301
-      },
-      {
-        "source": "/iwd",
-        "destination": "https://www.meetup.com/GDG-Unilag/events/269131739/",
-        "type": 301
-      },
-	     {
-        "source": "/live",
-        "destination": "https://www.meetup.com/GDG-Unilag/events/272075660/",
-        "type": 301
-      },
-      {
-        "source": "/tflive",
-        "destination": "https://www.meetup.com/GDG-Unilag/events/270768341/",
-        "type": 301
-      },
-      {
-        "source": "/IWD",
-        "destination": "https://www.meetup.com/GDG-Unilag/events/269131739/",
-        "type": 301
-      },
-      {
-        "source": "/hacktoberfest",
-        "destination": "https://organize.mlh.io/participants/events/4421-hacktoberfest-online-meetup-in-university-of-lagos",
-        "type": 301
-      },
-      {
-        "source": "/studygroup",
-        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSdedgEYVHLn62-nKVfaNUki3RAs5JkPTyZ-JanZyCOMdQcX2Q/viewform?usp=sf_link",
-        "type": 301
-      },
-      {
-        "source": "/cloudsession",
-        "destination": "https://dsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-cloud-session/",
-        "type": 301
-      },
-      {
-        "source": "/gitworkshop",
-        "destination": "https://dsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-git-and-github-workshop/#/",
-        "type": 301
-      },
-      {
-        "source": "/telegram",
-        "destination": "https://t.me/joinchat/HMc0ERQqermzdYDXV2lC-w",
-        "type": 301
-      },
-      {
-        "source": "/checkup",
-        "destination": "https://dsc.community.dev/e/mgb6ud/",
-        "type": 301
-      },
-      {
-        "source": "/asjbeginner",
-        "destination": "https://dsc.community.dev/e/mbb9rt/",
-        "type": 301
-      },
-      {
-        "source": "/opensource",
-        "destination": "https://dsc.community.dev/e/mby2yb/",
-        "type": 301
-      },
-      {
-        "source": "/showcase",
-        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSfjLq69BuPocWr2tr6unq0ke6XeuxV-NzkL7WJ6HLvRjrbvBg/viewform?usp=sf_link",
-        "type": 301
-      },
-      {
-        "source": "/feedback",
-        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSeCSOAxToCCfCQ-8rgNs-sBmyQ8rCoSzh40msE34oBYfjsfog/viewform?usp=sf_link",
-        "type": 301
-      },
-      {
-        "source": "/tech",
-        "destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-gdsc-design-series-designin-for-the-future/",
-        "type": 301
-      },
-      {
-        "source": "/career",
-        "destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-gdsc-unilag-career-series/",
-        "type": 301
-      },
-      {
-        "source": "/guidelines",
-        "destination": "https://docs.google.com/document/d/1BuBby78vTFkBAGAQbImWyJF-x-1THpnASHrFx5NAr-A/edit",
-        "type": 301
-      },
-      {
-        "source": "/youtube",
-        "destination": "https://www.youtube.com/channel/UCcYCdjq0456098v_XA_0xBg",
-        "type": 301
-      },
-      {
-        "source": "/eventslides",
-        "destination": "https://docs.google.com/document/d/1DMvmUpY5Gz_CtMzGD26TTM6A_-mteIMS-HxglPXpLfs/edit?usp=drivesdk",
-        "type": 301
-      },
-      {
-        "source": "/infosession",
-        "destination": "https://dsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-info-session-by-developer-student-clubs-university-of-lagos/",
-        "type": 301
-      }
-	  ] 
-  }
+	"hosting": {
+		"public": ".",
+		"ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+		"cleanUrls": true,
+		"trailingSlash": false,
+		"redirects": [
+			{
+				"source": "/join",
+				"destination": "https://gdsc.community.dev/university-of-lagos",
+				"type": 301
+			},
+			{
+				"source": "/feedback",
+				"destination": "https://forms.gle/LCVo8bBmEgz6LiRy7",
+				"type": 301
+			},
+			{
+				"source": "community-guidelines",
+				"destination": "https://developers.google.com/community-guidelines",
+				"type": 301
+			},
+			{
+				"source": "/whatsapp",
+				"destination": "https://chat.whatsapp.com/H3pcX0I9X310JVaPgU2SPD",
+				"type": 301
+			},
+			{
+				"source": "/slack",
+				"destination": "https://join.slack.com/t/dscunilag/shared_invite/zt-ai1jj62u-Dib__CFbcPSSiNafxhacGw",
+				"type": 301
+			},
+
+			{
+				"source": "/telegram",
+				"destination": "https://t.me/joinchat/HMc0ERQqermzdYDXV2lC-w",
+				"type": 301
+			},
+			{
+				"source": "/checkup",
+				"destination": "https://dsc.community.dev/e/mgb6ud/",
+				"type": 301
+			},
+			{
+				"source": "/guidelines",
+				"destination": "https://docs.google.com/document/d/1BuBby78vTFkBAGAQbImWyJF-x-1THpnASHrFx5NAr-A/edit",
+				"type": 301
+			},
+			{
+				"source": "/youtube",
+				"destination": "https://www.youtube.com/channel/UCcYCdjq0456098v_XA_0xBg",
+				"type": 301
+			}
+		]
+	}
 }
