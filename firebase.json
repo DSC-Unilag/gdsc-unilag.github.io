@@ -52,7 +52,17 @@
 				"type": 301
 			},
 			{
-				"source": "/event_1",
+				"source": "/info_session",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-gdsc-unilag-info-session/",
+				"type": 301
+			},
+			{
+				"source": "/is",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-gdsc-unilag-info-session/",
+				"type": 301
+			},
+			{
+				"source": "/infosession",
 				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-gdsc-unilag-info-session/",
 				"type": 301
 			}
