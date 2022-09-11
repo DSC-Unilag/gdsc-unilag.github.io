@@ -50,6 +50,11 @@
 				"source": "/youtube",
 				"destination": "https://www.youtube.com/channel/UCcYCdjq0456098v_XA_0xBg",
 				"type": 301
+			},
+			{
+				"source": "/event_1",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-gdsc-unilag-info-session/",
+				"type": 301
 			}
 		]
 	}
