@@ -70,6 +70,11 @@
 				"source": "/infosession",
 				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-gdsc-unilag-info-session/",
 				"type": 301
+			},
+			{
+				"source": "/tutors",
+				"destination": "https://forms.gle/wteBZ5APKjhsYY9z5",
+				"type": 301
 			}
 		]
 	}
