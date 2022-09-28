@@ -75,6 +75,11 @@
 				"source": "/tutors",
 				"destination": "https://forms.gle/wteBZ5APKjhsYY9z5",
 				"type": 301
+			},
+			{
+				"source": "/study_group",
+				"destination": "https://forms.gle/fbnxJhDzgpj4PFwA7",
+				"type": 301
 			}
 		]
 	}
