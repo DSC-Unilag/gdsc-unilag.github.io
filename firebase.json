@@ -83,17 +83,17 @@
 			},
 			{
 				"source": "/hacktoberfest_1",
-				"destination": "https://forms.gle/fbnxJhDzgpj4PFwA7",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-hacktoberfest-contributing-to-open-source/",
 				"type": 301
 			},
 			{
 				"source": "/hacktoberfest_2",
-				"destination": "https://forms.gle/fbnxJhDzgpj4PFwA7",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-workshop-on-contributing-to-open-source-project/",
 				"type": 301
 			},
 			{
 				"source": "/hacktoberfest_3",
-				"destination": "https://forms.gle/fbnxJhDzgpj4PFwA7",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-grow-an-active-open-source-contribution-presence/",
 				"type": 301
 			}
 		]
