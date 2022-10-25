@@ -96,6 +96,11 @@
 				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-grow-an-active-open-source-contribution-presence/",
 				"type": 301
 			}
+			{
+				"source": "/combining_studies_with_career",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-excel-in-school-while-learning-a-skill-or-working/",
+				"type": 301
+			}
 		]
 	}
 }
