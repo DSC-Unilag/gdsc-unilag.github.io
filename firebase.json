@@ -102,6 +102,11 @@
 				"type": 301
 			},
 			{
+				"source": "/career_in_tech",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-building-a-career-in-tech/",
+				"type": 301
+			},
+			{
 				"source": "/combining_studies_with_career",
 				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-excel-in-school-while-learning-a-skill-or-working/",
 				"type": 301
