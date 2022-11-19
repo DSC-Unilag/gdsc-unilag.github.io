@@ -110,6 +110,11 @@
 				"source": "/combining_studies_with_career",
 				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-excel-in-school-while-learning-a-skill-or-working/",
 				"type": 301
+			},
+			{
+				"source": "/shop",
+				"destination": "https://flutterwave.com/store/gdsc",
+				"type": 301
 			}
 		]
 	}
