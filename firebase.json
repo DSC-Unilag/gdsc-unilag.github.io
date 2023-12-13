@@ -27,7 +27,7 @@
 			},
 			{
 				"source": "/whatsapp",
-				"destination": "https://chat.whatsapp.com/H3pcX0I9X310JVaPgU2SPD",
+				"destination": "https://chat.whatsapp.com/DxERIebGkgGF2x8JW4UTu5",
 				"type": 301
 			},
 			{
@@ -98,17 +98,17 @@
 			},
 			{
 				"source": "/compose_camp",
-				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-gdsc-unilag-compose-camp/purchased/b6e03ce6559a4ba2b102d8087e175a82",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-learn-about-compose-camp/cohost-university-of-lagos",
 				"type": 301
 			},
 			{
-				"source": "/team_building",
-				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-team-building/ ",
+				"source": "/ml_info_session",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-gdsc-ml-info-session/",
 				"type": 301
 			},
 			{
-				"source": "/combining_studies_with_career",
-				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-excel-in-school-while-learning-a-skill-or-working/",
+				"source": "/effective_time_management",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-effective-time-management-for-medical-students/",
 				"type": 301
 			},
 			{
@@ -119,6 +119,71 @@
 			{
 				"source": "/hands_on_lab",
 				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-automating-builds-and-deployments-with-cicd-pipelines/",
+				"type": 301
+			},
+			{
+				"source": "/dflagos-se-cfv",
+				"destination": "https://docs.google.com/forms/d/e/1FAIpQLSfTg200zTgdcWTOdunfKpG1TK1DsOMM0FxFymLFvhi_cON0Eg/viewform?usp=sharing",
+				"type": 301
+			},
+			{
+				"source": "/hacktoberfest_2023",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-hactoberfest-info-session/",
+				"type": 301
+			},
+			{
+				"source": "/df_lagos",
+				"destination": "https://devfest.dscunilag.dev",
+				"type": 301
+			},
+			{
+				"source": "/dflagos-se-cfp",
+				"destination": "https://docs.google.com/forms/d/e/1FAIpQLSdB8Jmnrish42_pgQpgFcrnnIYfSavTQiLOvOekWFr3KEmElg/viewform",
+				"type": 301
+			},
+			{
+				"source": "/hacktobefest_design_special",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-playing-a-role-in-open-source-as-a-designer/",
+				"type": 301
+			},
+			{
+				"source": "/hacktobefest_data_ml_special",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-contributing-to-open-source-as-a-data-analystml-engineer/",
+				"type": 301
+			},
+			{
+				"source": "/hacktobefest_maintainers_special",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-an-extensive-guide-for-new-contributors-and-maintainers/",
+				"type": 301
+			},
+			{
+				"source": "/hacktoberfest_web3_special",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-initiating-your-open-source-web3-journey/",
+				"type": 301
+			},
+			{
+				"source": "/articles",
+				"destination": "https://docs.google.com/forms/d/19Cf-rnLZaOw2BK83KjdLe1ZXxvfQOu_BX0vz4tM1hJA",
+				"type": 301
+			},
+			{
+				"source": "/editors",
+				"destination": "https://docs.google.com/forms/d/1nE9TagYw1aqd56Q7J61XXAnAikOOh3AZcNBfJ9az37k",
+				"type": 301
+			},
+			{
+				"source": "/podcasts",
+				"destination": "https://docs.google.com/forms/d/1hBGln58-fCTCpuDxKtnOrRZr2fGV9maP0yGCCBYsKMw",
+				"type": 301
+			},
+			{
+				"source": "/AMA_session",
+				"destination": "https://gdsc.community.dev/events/details/developer-student-clubs-university-of-lagos-presents-ask-me-anything-with-bakare-emmanuel/",
+				"type": 301
+			},
+			{
+				"source": "/df_lagos_map",
+				"destination": "https://maps.app.goo.gl/5amV5UrSTbL9sbUF9?g_st=ic",
 				"type": 301
 			}
 		]
