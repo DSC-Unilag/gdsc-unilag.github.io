@@ -13,8 +13,8 @@
     <link rel="manifest" href="manifest.json"/>
     <link rel="icon" href="images/icon3.png" type="image/png"/>
     <!-- <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="dns-prefetch" href="https://docs.google.com">
     <link href='https://fonts.googleapis.com/css?family=Google+Sans:400,500,700|Material+Icons' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
    
+    <script src="js/slider.js" defer></script>
 </head>
 
 <body>
@@ -139,14 +140,440 @@
         
     </div>
 
+    <section id="testimonials" class="section-spacer testimonials-section">
+        <div class="container-fluid">
+            <header class="section-header text-center">
+                <h2 class="section-title">Testimonials</h2>
+            </header>
+            <div class="carouselWrapper" data-carousel>
+                <ul data-slides>
+                    <li class="slide">
+                        <img src="images/assets/testimonials/Frame1.png" alt="Testimonial 1">
+                    </li>
+                    <li class="slide">
+                        <img src="images/assets/testimonials/Frame1.png" alt="Testimonial 2">
+                    </li>
+                    <li class="slide">
+                        <img src="images/assets/testimonials/Frame2.png" alt="Testimonial 3">
+                    </li>
+                    <li class="slide">
+                        <img src="images/assets/testimonials/Frame1.png" alt="Testimonial 4">
+                    </li>
+                    <li class="slide">
+                        <img src="images/assets/testimonials/Frame2.png" alt="Testimonial 5">
+                    </li>
+                </ul>
+                <div class="carousel-buttons">
+                    <div class="carousel-button" data-carousel-button="prev">
+                        <img src="images/left-arrow.svg" class="carousel-button-icon" alt="Left Arrow">
+                    </div>
+                    <div class="carousel-button" data-carousel-button="next">
+                        <img src="images/right-arrow.svg" class="carousel-button-icon" alt="Right Arrow">
+                    </div>
+                </div>
+            </div>
+            <div class="vector-blocks">
+                <img src="images/vector-red.png" alt="">
+                <img src="images/vector-gray.png" alt="">
+            </div>
+        </div>
 
+    </section>
 
+    <section id="events" class="section-spacer events-section">
+        <div class="container-fluid">
+            <div class="events-tab">
+                <div class="events-type-switch">
+                    <ul class="nav justify-content-center" id="eventsTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active upcoming" id="upcoming-events-tab" data-bs-toggle="tab" data-bs-target="#upcoming-events-tab-pane" type="button" role="tab" aria-controls="upcoming-events-tab-pane" aria-selected="true">Upcoming Events</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link past hide" id="past-events-tab" data-bs-toggle="tab" data-bs-target="#past-events-tab-pane" type="button" role="tab" aria-controls="past-events-tab-pane" aria-selected="false">Past Events</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="eventsTabContent">
+                    <div class="tab-pane fade show active" id="upcoming-events-tab-pane" role="tabpanel" aria-labelledby="upcoming-events-tab" tabindex="0">
+                        <div class="carouselWrapper" data-carousel>
+                            <ul data-slides>
+                                <li class="slide">
+                                    <div class="card">
+                                        <img src="images/assets/events/event-card.png" alt="Event Card" class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="tagging blue float-end">Beginner</p>
+                                            <h5 class="card-title">Title</h5>
+                                            <p class="card-text">Description</p>
+                                            <div class="event-details">
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-blue d-block mt-1"><i class="far fa-calendar-alt"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Date</span>
+                                                    </div>
+                                                </div>
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-green d-block mt-2"><i class="far fa-clock"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Time</span>
+                                                    </div>
+                                                </div>
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-red d-block mt-2"><i class="fas fa-map-marker-alt"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Venue</span>
+                                                    </div>
+                                                </div>
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-blue d-block mt-2"><i class="fas fa-user"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Speaker</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="register blue float-end">RSVP</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="slide">
+                                    <div class="card">
+                                        <img src="images/assets/events/event-card.png" alt="Event Card" class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="tagging green float-end">Expert</p>
+                                            <h5 class="card-title">Title</h5>
+                                            <p class="card-text">Description</p>
+                                            <div class="event-details">
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-blue d-block mt-1"><i class="far fa-calendar-alt"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Date</span>
+                                                    </div>
+                                                </div>
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-green d-block mt-2"><i class="far fa-clock"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Time</span>
+                                                    </div>
+                                                </div>
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-red d-block mt-2"><i class="fas fa-map-marker-alt"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Venue</span>
+                                                    </div>
+                                                </div>
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-blue d-block mt-2"><i class="fas fa-user"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Speaker</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="register green float-end">RSVP</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="slide">
+                                    <div class="card">
+                                        <img src="images/assets/events/event-card.png" alt="Event Card" class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="tagging red float-end">Expert</p>
+                                            <h5 class="card-title">Title</h5>
+                                            <p class="card-text">Description</p>
+                                            <div class="event-details">
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-blue d-block mt-1"><i class="far fa-calendar-alt"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Date</span>
+                                                    </div>
+                                                </div>
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-green d-block mt-2"><i class="far fa-clock"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Time</span>
+                                                    </div>
+                                                </div>
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-red d-block mt-2"><i class="fas fa-map-marker-alt"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Venue</span>
+                                                    </div>
+                                                </div>
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-blue d-block mt-2"><i class="fas fa-user"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Speaker</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="register red float-end">RSVP</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="slide">
+                                    <div class="card">
+                                        <img src="images/assets/events/event-card.png" alt="Event Card" class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="tagging gold float-end">Expert</p>
+                                            <h5 class="card-title">Title</h5>
+                                            <p class="card-text">Description</p>
+                                            <div class="event-details">
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-blue d-block mt-1"><i class="far fa-calendar-alt"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Date</span>
+                                                    </div>
+                                                </div>
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-green d-block mt-2"><i class="far fa-clock"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Time</span>
+                                                    </div>
+                                                </div>
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-red d-block mt-2"><i class="fas fa-map-marker-alt"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Venue</span>
+                                                    </div>
+                                                </div>
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-blue d-block mt-2"><i class="fas fa-user"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Speaker</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="register gold float-end">RSVP</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="slide">
+                                    <div class="card">
+                                        <img src="images/assets/events/event-card.png" alt="Event Card" class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="tagging green float-end">Expert</p>
+                                            <h5 class="card-title">Title</h5>
+                                            <p class="card-text">Description</p>
+                                            <div class="event-details">
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-blue d-block mt-1"><i class="far fa-calendar-alt"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Date</span>
+                                                    </div>
+                                                </div>
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-green d-block mt-2"><i class="far fa-clock"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Time</span>
+                                                    </div>
+                                                </div>
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-red d-block mt-2"><i class="fas fa-map-marker-alt"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Venue</span>
+                                                    </div>
+                                                </div>
+                                                <div class="details-row">
+                                                    <div class="">
+                                                        <span class="text-blue d-block mt-2"><i class="fas fa-user"></i></span>
+                                                    </div>
+                                                    <div class="">
+                                                        <span>Speaker</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="register green float-end">RSVP</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="carousel-buttons hide">
+                                <div class="carousel-button" data-carousel-button="prev">
+                                    <img src="images/left-arrow-black.svg" class="carousel-button-icon" alt="Left Arrow">
+                                </div>
+                                <div class="carousel-button" data-carousel-button="next">
+                                    <img src="images/right-arrow-black.svg" class="carousel-button-icon" alt="Right Arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="past-events-tab-pane" role="tabpanel" aria-labelledby="past-events-tab" tabindex="0">
+                        <p class="text-center my-5">Check back later for past events</p>
+                    </div>
+                </div>
+            </div>
+            <h5 class="view-events text-center">
+                <button>View All Events</button>
+                <div class="go-to-icon">
+                    <img src="images/right-arrow-straight.svg" alt="Go to arrow">
+                </div>
+            </h5>
+        </div>
 
+    </section>
 
+    <section class="subscribe-section" id="subscribe">
+        <div class="container-fluid">
+            <header class="section-header text-center">
+                <h2 class="section-title">Subscribe to our Newsletter</h2>
+            </header>
+            <form action="">
+                <div class="subscribe-form">
+                    <input type="email" class="" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </div>``
+            </form>
+    </section>
 
-
-
-
+    <footer class="footer-section">
+        <div class="container-fluid">
+            <div class="row flex-column flex-sm-row flex-lg-row">
+                <div class="col-12 col-lg-3 align-self-center">
+                    <div class="footer-widget first-of-footer-widget">
+                        <img data-src="images/icon-logo.png" class="logo-xsm mb-10" alt="DSC University of Lagos footer logo">
+                        <img data-src="images/Frame53.png" class="logo-sm mb-10" alt="DSC University of Lagos footer logo">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="row">
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <div class="footer-widget">
+                                <h4 class="footer-widget__title">Clubs</h4>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#" target="_blank" rel="noreferrer">About GDSC</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" rel="noreferrer">Core Team</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" rel="noreferrer">Technologies</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <div class="footer-widget">
+                                <h4 class="footer-widget__title">Resources</h4>
+                                <ul>
+                                    <li class="list-unstyled">
+                                    <li>
+                                        <a href="#" target="_blank" rel="noreferrer">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" rel="noreferrer">Learn</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" rel="noreferrer">Join GDSC</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <div class="footer-widget">
+                                <h4 class="footer-widget__title">Activities</h4>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">Programs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">Hackathon</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">Open Source</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">Workshops</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md-3">
+                            <div class="footer-widget">
+                                <h4 class="footer-widget__title">Help and Support</h4>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">FAQs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <div class="footer-widget">
+                        <ul class="social-list__inline mt-10">
+                            <li>
+                                <a href="https://twitter.com/DSCUnilag">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/DSC-Unilag">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://dscunilag.slack.com">
+                                    <i class="fab fa-slack"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/user/GoogleDevelopers"target="_blank" rel="noopener">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-40">
+                <p class="m-0 text-center">Copyright ©<script>document.write(new Date().getFullYear())</script>. All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
 
 
 
