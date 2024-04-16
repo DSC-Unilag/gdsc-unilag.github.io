@@ -432,6 +432,27 @@ section header {
   align-items: center;
 }
 
+#team .slide {
+  width: 325px;
+  /* height: 400px; */
+}
+
+#team .slide a {
+  text-decoration: none;
+}
+
+#team .carouselWrapper > ul {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+#team .slide img {
+  width: 100%;
+}
+
+#team .carousel-button {
+  border: 3px solid #000;
+}
+
 @media screen and (max-width: 992px) {
   .view-team {
     width: 90%;
@@ -544,9 +565,9 @@ header.hidden-sm {
 }
 
 #testimonials .carouselWrapper > ul,
-#events .carouselWrapper > ul {
+#events .carouselWrapper > ul,
+#team .carouselWrapper > ul {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
   gap: 1.5em;
   list-style-type: none;
   overflow-x: auto;
@@ -556,8 +577,14 @@ header.hidden-sm {
   
 }
 
+#testimonials .carouselWrapper > ul,
+#events .carouselWrapper > ul {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 #testimonials .carouselWrapper > ul::-webkit-scrollbar,
-#events .carouselWrapper > ul::-webkit-scrollbar {
+#events .carouselWrapper > ul::-webkit-scrollbar, 
+#team .carouselWrapper > ul::-webkit-scrollbar {
   display: none;
 }
 
@@ -599,7 +626,8 @@ header.hidden-sm {
 }
 
 #events .carousel-button.disable,
-#testimonials .carousel-button.disable {
+#testimonials .carousel-button.disable,
+#team .carousel-button.disable {
   border: 1px solid #999;
 }
 
