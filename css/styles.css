@@ -351,6 +351,174 @@ section header {
   margin-bottom: 10px  ;
 }
 
+/* beginning of teams section */
+
+[class^="col-"]:nth-child(1) .team-image {
+  filter: drop-shadow(10px 10px 0px #FBBC04);
+}
+[class^="col-"]:nth-child(2) .team-image {
+  filter: drop-shadow(10px 10px 0px #0F9D58);
+}
+[class^="col-"]:nth-child(3) .team-image {
+  filter: drop-shadow(10px 10px 0px #EA4335);
+}
+[class^="col-"]:nth-child(4) .team-image {
+  filter: drop-shadow(10px 10px 0px #4285F4);
+}
+[class^="col-"]:nth-child(5) .team-image {
+  filter: drop-shadow(10px 10px 0px #000);
+}
+[class^="col-"]:nth-child(6) .team-image {
+  filter: drop-shadow(10px 10px 0px #FBBC04);
+}
+
+#team {
+  position: relative;
+}
+
+.team-vector-blocks {
+  position: absolute;
+}
+
+.team-vector-blocks.above {
+  top: 0;
+  right: 0;
+}
+
+.team-vector-blocks.below {
+  bottom: 0;
+  left: 0;
+}
+
+
+
+.view-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+  background-color: #000;
+  border-radius: 35px;
+  padding: 1rem 0;
+  width: 20%;
+  min-width: 300px;
+  margin: auto;
+}
+
+.view-team button {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+.go-to-icon {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .view-team {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .team-vector-blocks {
+    width: 5rem;
+  }
+}
+
+/* end of teams section */
+
+/* beginning of join us section */
+
+header.hidden-lg {
+  display: none;
+}
+
+header.hidden-sm {
+  display: block;
+}
+
+#join-us .section-title {
+  color: #4285F4;
+  font-weight: bold;
+}
+
+.join-us-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 0.3rem;
+}
+
+.join-us-content img {
+  width: 85%;
+}
+
+.join-us-content, .join-us-image {
+  flex: 1;
+}
+
+.join-us-content * {
+  /* border: 1px solid tan; */
+}
+
+.join-us-image img {
+  width: 100%;
+}
+
+.join-us__list-header {
+  font-weight: bold;
+}
+
+.join-us__list-text {
+  font-size: 1.5rem;
+}
+
+.stroke-double {
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+  font-size: 5rem;
+}
+
+
+@media screen and (max-width: 992px) {
+  header.hidden-lg {
+    display: block;
+  }
+
+  header.hidden-sm {
+    display: none;
+  }
+
+  .join-us-wrapper {
+    flex-direction: column;
+  }
+
+  .join-us__list-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 398px) {
+  .join-us__list-text {
+    font-size: 0.9rem;
+  }
+
+  .stroke-double {
+    font-size: 4rem;
+  }
+}
+
+/* end of join us section */
+
 /* beginning testimonials section styling */
 
 #testimonials {
@@ -532,6 +700,7 @@ section header {
   .view-events button {
     color: #fff;
     background-color: transparent;
+    border: none;
   }
 
   .go-to-icon {
