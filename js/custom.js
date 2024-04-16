@@ -16,7 +16,14 @@ closeNav.addEventListener("click", ()=>{
 menuBar.addEventListener("click", ()=>{
 	document.querySelector("nav").style.display = 'block';
 })
-
+document.addEventListener('click', function(e) {
+	const sidebar = document.querySelector("nav");
+	const closeNav = document.querySelector("nav .close")
+	if (e.target !== menuBar && e.target !== sidebar) {
+		sidebar.style.display = 'none';
+		console.log('=======')
+	}
+})
 
 // $(window).on("load", function() {
 // 	"use strict";
