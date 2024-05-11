@@ -462,7 +462,7 @@ section header {
 }
 
 #team .carouselWrapper > ul {
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(14, 1fr);
 }
 
 #team .slide img {
