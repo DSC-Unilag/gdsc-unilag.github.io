@@ -332,7 +332,19 @@ nav ul li a.active, nav ul li a:hover {
   color: #fff;
   cursor: pointer;
 }
-
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+.image-container img {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0 50px 0 50px;
+}
 .section-spacer {
   padding: 100px 0;
 }
@@ -364,22 +376,30 @@ section header {
 
 /* beginning of teams section */
 
-[class^="col-"]:nth-child(1) .team-image {
+[class^="col-"]:nth-child(1) .team-image,
+[class^="col-"]:nth-child(7) .team-image,
+[class^="col-"]:nth-child(13) .team-image {
   filter: drop-shadow(10px 10px 0px #FBBC04);
 }
-[class^="col-"]:nth-child(2) .team-image {
+[class^="col-"]:nth-child(2) .team-image,
+[class^="col-"]:nth-child(8) .team-image,
+[class^="col-"]:nth-child(14) .team-image {
   filter: drop-shadow(10px 10px 0px #0F9D58);
 }
-[class^="col-"]:nth-child(3) .team-image {
+[class^="col-"]:nth-child(3) .team-image,
+[class^="col-"]:nth-child(9) .team-image {
   filter: drop-shadow(10px 10px 0px #EA4335);
 }
-[class^="col-"]:nth-child(4) .team-image {
+[class^="col-"]:nth-child(4) .team-image,
+[class^="col-"]:nth-child(10) .team-image {
   filter: drop-shadow(10px 10px 0px #4285F4);
 }
-[class^="col-"]:nth-child(5) .team-image {
+[class^="col-"]:nth-child(5) .team-image,
+[class^="col-"]:nth-child(11) .team-image {
   filter: drop-shadow(10px 10px 0px #000);
 }
-[class^="col-"]:nth-child(6) .team-image {
+[class^="col-"]:nth-child(6) .team-image,
+[class^="col-"]:nth-child(12) .team-image {
   filter: drop-shadow(10px 10px 0px #FBBC04);
 }
 
