@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   background: #f1f3f4;
   font-family: 'Google Sans';
