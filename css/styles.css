@@ -332,8 +332,62 @@ nav ul li a.active, nav ul li a:hover {
   color: #fff;
   cursor: pointer;
 }
-
-
+.hero .doodle {
+  position: absolute;
+  z-index: -1;
+}
+.hero .doodle:nth-child(1) {
+  top: 50px;
+  left: 7%;
+}
+.hero .doodle:nth-child(2) {
+  top: 200px;
+  right: 5%;
+}
+.faq-container {
+  max-width: 1000px;
+  margin: 0 auto 100px;
+}
+.faq-card {
+  padding: 15px 20px;
+  margin: 0 15px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.question-expand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.question {
+  font-weight: bold;
+}
+.expand {
+  border-radius: 100%;
+  padding: 1.5px 2px 0 2px;
+  opacity: 0.8;
+  background-color: #000;
+  background-blend-mode: multiply;
+}
+.answer {
+  display: none;
+}
+.faq-card:nth-child(1), .faq-card:nth-child(5) {
+  background-color: #B3CEFB;
+  border: 1px #b4d1ff solid;
+}
+.faq-card:nth-child(2), .faq-card:nth-child(6) {
+  background-color: #ADDCBC;
+  border: 1px #75ffa3 solid;
+}
+.faq-card:nth-child(3), .faq-card:nth-child(7) {
+  background-color: #FDDDA6;
+  border: 1px #ffb73b solid;
+}
+.faq-card:nth-child(4), .faq-card:nth-child(8) {
+  background-color: #FBD9D7;
+  border: 1px #ffb4b0 solid;
+}
 /* html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
