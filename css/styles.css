@@ -419,7 +419,6 @@ nav ul li a:hover {
 #team-members {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 92px;
 }
 
@@ -639,11 +638,19 @@ nav ul li a:hover {
   #team-lead {
     margin-left: 20%;
   }
+
+  #team-members {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (width >= 1441px) {
   #footer-flex {
     padding-inline: 7%;
+  }
+
+  #team-members {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
