@@ -23,18 +23,18 @@ menuBar.addEventListener("click", () => {
 
 const MLTeam = [
   {
-    name: "Oluwafikayomi Adeleke",
-    role: "",
+    name: "Kolawole-Jacobs Demilade",
+    role: "ML Lead",
     picture: "",
-    birthday: "April 3",
+    birthday: "August 10",
     twitterHandle: "",
     linkedInLink: "",
   },
   {
-    name: "Kolawole-Jacobs Demilade",
-    role: "Co-Lead",
+    name: "Oluwafikayomi Adeleke",
+    role: "",
     picture: "",
-    birthday: "August 10",
+    birthday: "April 3",
     twitterHandle: "",
     linkedInLink: "",
   },
@@ -635,7 +635,7 @@ for (let i of teamsAsideUl.children) {
         );
 
         if (teamArrayWithoutLead.length === 0) {
-          teamMembers.innerHTML = `<p class="no-team-members">No team members yet</p>`;
+          teamMembers.innerHTML = `<p class="no-team-members">No team members</p>`;
         }
 
         for (let i in teamArrayWithoutLead) {
