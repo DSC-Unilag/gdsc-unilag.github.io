@@ -423,7 +423,7 @@ const tutorsTeam = [
   {
     name: "Afolabi Mercy (Aphomer)",
     role: "Tutors Lead",
-    picture: "",
+    picture: "/images/assets/team/Tutors/AfolabiMercy.jpg",
     birthday: "October 27",
     twitterHandle: "",
     linkedInLink: "",
