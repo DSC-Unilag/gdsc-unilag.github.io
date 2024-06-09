@@ -5,7 +5,7 @@
 }
 body {
   background: #f1f3f4;
-  font-family: 'Google Sans';
+  font-family: "Google Sans";
 }
 header {
   padding: 15px 50px;
@@ -31,9 +31,9 @@ header ul {
   }
 }
 @media (min-width: 768px) {
-header .menubar {
-  display: none;
-}
+  header .menubar {
+    display: none;
+  }
 }
 header ul li {
   margin: 0;
@@ -94,8 +94,9 @@ nav ul li a {
   border-radius: 50px;
   text-decoration: none;
 }
-nav ul li a.active, nav ul li a:hover {
-  color: #4285F4;
+nav ul li a.active,
+nav ul li a:hover {
+  color: #4285f4;
   background: #fff;
 }
 .hero {
@@ -128,8 +129,9 @@ nav ul li a.active, nav ul li a:hover {
   }
 }
 @media (max-width: 950px) {
-  .hero .head-doodle {
-    opacity: .5;
+  .hero .head-doodle,
+  .teams-head-doodle {
+    opacity: 0.5;
   }
 }
 @media (max-width: 720px) {
@@ -141,7 +143,7 @@ nav ul li a.active, nav ul li a:hover {
   font-size: 60px;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #1E1E1E;
+  color: #1e1e1e;
 }
 @media (max-width: 525px) {
   .hero h1 {
@@ -149,9 +151,9 @@ nav ul li a.active, nav ul li a:hover {
   }
 }
 .hero h1 span {
-  color: #FBBC04;
+  color: #fbbc04;
   padding: 15px 10px 0px 0px;
-  border: 3px solid #FBBC04;
+  border: 3px solid #fbbc04;
   border-radius: 50%;
 }
 .hero-cta {
@@ -176,14 +178,14 @@ nav ul li a.active, nav ul li a:hover {
   aspect-ratio: 16/9;
   max-width: 968px;
   border-radius: 30px;
-  border: 4px solid #FBBC04;
-  filter: drop-shadow(10px 10px 0px #FBBC04);
+  border: 4px solid #fbbc04;
+  filter: drop-shadow(10px 10px 0px #fbbc04);
 }
 .separator {
   width: 100%;
 }
 .separator img {
-  width: 100%
+  width: 100%;
 }
 .about {
   position: relative;
@@ -196,8 +198,8 @@ nav ul li a.active, nav ul li a:hover {
 .about .image {
   width: 50%;
   aspect-ratio: 16/9;
-  border: 4px solid #0F9D58;
-  filter: drop-shadow(10px 10px 0px #0F9D58);
+  border: 4px solid #0f9d58;
+  filter: drop-shadow(10px 10px 0px #0f9d58);
   border-radius: 0px 20px;
 }
 .about .content {
@@ -233,7 +235,7 @@ nav ul li a.active, nav ul li a:hover {
 .about .content p.sub-title {
   font-size: 18px;
   font-weight: 400;
-  color: #1E1E1ECC;
+  color: #1e1e1ecc;
 }
 .about .cta {
   padding: 16px 24px 16px 20px;
@@ -242,7 +244,7 @@ nav ul li a.active, nav ul li a:hover {
   margin-top: 20px;
   display: inline-block;
   text-decoration: none;
-  color: #fff;  
+  color: #fff;
 }
 .about .cta .content {
   width: 100%;
@@ -283,23 +285,26 @@ nav ul li a.active, nav ul li a:hover {
   border-radius: 20px;
   color: #fff;
 }
-.join .container .box:nth-child(1), .join .container .box:nth-child(5) {
-  background: #4285F4;
+.join .container .box:nth-child(1),
+.join .container .box:nth-child(5) {
+  background: #4285f4;
 }
-.join .container .box:nth-child(2), .join .container .box:nth-child(6) {
-  background: #EA4335;
+.join .container .box:nth-child(2),
+.join .container .box:nth-child(6) {
+  background: #ea4335;
 }
-.join .container .box:nth-child(3), .join .container .box:nth-child(7) {
-  background: #0F9D58;
+.join .container .box:nth-child(3),
+.join .container .box:nth-child(7) {
+  background: #0f9d58;
 }
 .join .container .box:nth-child(4) {
-  background: #FBBC04;
+  background: #fbbc04;
 }
 .join .container .box .title {
   text-align: left;
   margin-bottom: 10px;
   font-size: 40px;
-  font-weight: 700;  
+  font-weight: 700;
 }
 .join .container .box .content {
   font-size: 20px;
@@ -311,7 +316,8 @@ nav ul li a.active, nav ul li a:hover {
   left: 50%;
   transform: translateX(-50%);
 }
-.join .left, .join .right {
+.join .left,
+.join .right {
   padding: 20px;
   margin: 0px 6px;
   border-radius: 50%;
@@ -322,6 +328,326 @@ nav ul li a.active, nav ul li a:hover {
   cursor: pointer;
 }
 
+/* TEAMS START */
+.teams-head-doodle {
+  position: absolute;
+  z-index: -1;
+}
+
+.teams-head-doodle:nth-child(1) {
+  top: 116px;
+  left: 9%;
+}
+
+.teams-head-doodle:nth-child(2) {
+  top: 425px;
+  right: 4%;
+}
+
+#teams-main {
+  padding-inline: 106px;
+}
+
+#pattern {
+  margin: 58px 0;
+}
+
+#teams-header {
+  display: flex;
+  flex-direction: row;
+}
+
+#teams-aside {
+  flex: 3 3 0;
+  margin-top: 22px;
+  width: 100%;
+  max-width: 200px;
+}
+
+#teams-aside ul {
+  align-items: flex-start;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+#teams-aside ul li {
+  flex: 1;
+  cursor: pointer;
+}
+
+.teams-h1-span-override {
+  border: none !important;
+}
+
+#team-lead {
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+#team-lead-image {
+  width: 312px;
+  margin-bottom: 24px;
+  box-shadow: 5.95px 5.95px 0px 0px rgba(15, 157, 88, 1);
+}
+
+.member-image {
+  aspect-ratio: 1/1;
+  object-position: center;
+  object-fit: cover;
+  border-top-right-radius: 29.74px;
+  border-bottom-left-radius: 29.74px;
+}
+
+#team-members-header {
+  text-align: center;
+  margin-top: 66px;
+  margin-bottom: 75px;
+  font-size: 32px;
+}
+
+.no-team-members {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  grid-column: span 4;
+}
+
+#team-members {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 92px;
+}
+
+#team-members > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+}
+
+.member-name,
+.member-role {
+  text-align: left;
+}
+
+#team-members .member-image {
+  width: 240px;
+}
+
+#team-members > div:nth-child(4n + 1) .member-image {
+  box-shadow: 5.95px 5.95px 0px 0px rgba(251, 188, 4, 1);
+}
+
+#team-members > div:nth-child(4n + 2) .member-image {
+  box-shadow: 5.95px 5.95px 0px 0px rgba(15, 157, 88, 1);
+}
+
+#team-members > div:nth-child(4n + 3) .member-image {
+  box-shadow: 5.95px 5.95px 0px 0px rgba(66, 133, 244, 1);
+}
+
+#team-members > div:nth-child(4n + 4) .member-image {
+  box-shadow: 5.95px 5.95px 0px 0px rgba(234, 67, 53, 1);
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+#team-lead-details {
+  max-width: 312px;
+  text-align: left;
+}
+
+.member-name {
+  color: #1e1e1e;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 1.5px;
+}
+
+.member-role {
+  color: #1e1e1e;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#teams-footer {
+  background-color: #000;
+  color: white;
+  width: 100%;
+}
+
+#footer-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: space-between;
+  padding-top: 54px;
+  padding-inline: 5%;
+  padding-bottom: 24px;
+}
+
+#footer-logo {
+  min-width: 19%;
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+  column-gap: 1px;
+}
+
+#footer-logo > p span:first {
+  font-size: 15px;
+}
+
+#footer-logo > p span:last-of-type {
+  font-size: 12px;
+}
+
+#footer-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4%;
+}
+
+.footer-grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3.3px;
+}
+
+.footer-grid-item > p {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.footer-grid-item > ul {
+  list-style: none;
+  font-size: 18px;
+}
+
+.footer-grid-item > ul > li > a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 33px;
+}
+
+#footer-social {
+  flex: 1;
+  display: flex;
+  column-gap: 22.5px;
+}
+
+#footer-social > a {
+  cursor: pointer;
+}
+
+#footer-copyright {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 14px;
+}
+
+@media (width <= 768px) {
+  .teams-head-doodle:nth-child(1) {
+    top: 48px;
+    left: 5%;
+  }
+
+  .teams-head-doodle:nth-child(2) {
+    top: 200px;
+    right: 2%;
+  }
+
+  #teams-main {
+    padding-inline: 25px;
+  }
+
+  #teams-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #teams-aside {
+    font-size: 14px;
+  }
+
+  #team-lead {
+    align-items: center;
+  }
+
+  #team-lead-image {
+    width: 200px;
+  }
+
+  #team-members {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  #team-members > div {
+    align-items: center;
+  }
+
+  .member-name,
+  .member-role {
+    text-align: center;
+  }
+
+  #footer-flex {
+    flex-direction: column;
+  }
+
+  #footer-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5%;
+  }
+}
+
+@media (769px <= width <= 1024px) {
+  .teams-head-doodle:nth-child(2) {
+    top: 150px;
+    right: 2%;
+  }
+
+  #team-members {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #team-lead {
+    margin-left: 10%;
+  }
+
+  #footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
+  }
+}
+
+@media (1025px <= width <= 1440px) {
+  #team-lead {
+    margin-left: 20%;
+  }
+}
+
+@media (width >= 1441px) {
+  #footer-flex {
+    padding-inline: 7%;
+  }
+}
+
+/* TEAMS END */
 
 /* html, body {
   -webkit-font-smoothing: antialiased;
