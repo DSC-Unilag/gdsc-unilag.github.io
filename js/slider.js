@@ -1,8 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const joinCarousel = document.querySelector("#why-join .carouselWrapper>ul");
+  joinCarousel.scrollTop = 800;
+  joinCarousel.addEventListener("scroll", () => {
+    console.log(joinCarousel.scrollTop);
+    // joinCarousel.scrollTop = 100;
+  });
+
   // Adjusts the height of carousel slides based on the wrapper's width when the window is resized if the screen width is greater than 800 pixels.
   updateCarouselHeight();
   window.addEventListener("resize", () => {
-    console.log("resize");
     updateCarouselHeight();
   });
 
@@ -20,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const slideDistance = slide.offsetWidth * offset;
 
       let width = screen.width;
-      console.log("width = ", width);
       if (width < 500) {
         slides.scrollBy({ left: slideDistance, behavior: "smooth" });
       } else {
@@ -32,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll("[data-slides]");
   slides.forEach((slide) => {
     slide.addEventListener("scroll", () => {
-      console.log("Scroll");
       handleSlideButtons(slide);
     });
   });
@@ -43,24 +47,16 @@ function updateCarouselHeight() {
   carouselWrapper.forEach((wrapper) => {
     const slides = wrapper.querySelector("ul[data-slides]");
     let currentScreenWidth = screen.width;
-    console.log("width?", currentScreenWidth);
     if (currentScreenWidth >= 768) {
       slides.style.height = `${wrapper.clientWidth}px`;
-      console.log("height = ", wrapper.clientWidth);
-      console.log("greater than 768")
     } else {
       slides.style.height = "auto";
-      console.log("height = ", wrapper.clientWidth);
-      console.log("less than 768")
     }
   });
 }
 
 // handle state of carousel buttons based on scroll position
 const handleSlideButtons = (slide) => {
-  console.log("Scroll top = ", slide.scrollTop);
-  console.log("Scroll width = ", slide.scrollHeight);
-  console.log("Client width = ", slide.clientHeight);
   // const maxScrollLeft = slide.scrollWidth - slide.clientWidth
   const maxScrollTop = slide.scrollHeight - slide.clientHeight;
   const buttons = slide
