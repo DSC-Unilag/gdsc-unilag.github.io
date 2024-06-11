@@ -571,7 +571,7 @@ const checkForLead = (text) => {
   );
 };
 
-const allTeamsLeads = Object.values(teamNameToArrayMapper)
+let allTeamsLeads = Object.values(teamNameToArrayMapper)
   .flat()
   .filter((lead) => checkForLead(lead.role));
 
