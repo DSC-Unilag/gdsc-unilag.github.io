@@ -368,13 +368,16 @@ nav ul li a:hover {
   align-items: flex-start;
   list-style: none;
   display: flex;
-  flex-direction: column;
-  row-gap: 12px;
+  gap: 12px;
+  width: 100%;
+  overflow-x: scroll;
+  padding: 16px 0;
 }
 
 #teams-aside ul li {
   flex: 1;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .teams-h1-span-override {
@@ -569,7 +572,7 @@ nav ul li a:hover {
   }
 
   #teams-main {
-    padding-inline: 25px;
+    padding-inline: 20px;
   }
 
   #teams-header {
@@ -611,6 +614,24 @@ nav ul li a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     gap: 5%;
+  }
+}
+
+@media (426px <= width <= 768px) {
+  #teams-aside {
+    align-self: flex-start;
+    margin: 0 12.5%;
+    width: 75%;
+    max-width: 75%;
+  }
+}
+
+@media (width >= 769px) {
+  #teams-aside ul {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    overflow-x: auto;
   }
 }
 
