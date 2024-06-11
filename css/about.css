@@ -286,9 +286,7 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 1100px) {
  #join-community .content {
-  /* flex-direction: column; */
   padding: 4rem 2rem;
-  /* width: 85%; */
   max-width: 700px;
   }
 

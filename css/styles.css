@@ -339,7 +339,7 @@ nav ul li a:hover {
   display: grid;
   justify-content: center;
   justify-items: center;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr); /* only 4 slides in why join section */
   gap: 0em;
   overflow-x: auto;
 
@@ -381,7 +381,7 @@ nav ul li a:hover {
   }
 
   #why-join .carouselWrapper>ul {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     transform: rotate(0deg) translateY(0px);
     gap: 1em;
     width: 100%;
@@ -574,6 +574,41 @@ section header {
 
 /* beginning of teams section */
 
+#team .slide:nth-child(1) .team-image,
+#team .slide:nth-child(7) .team-image,
+#team .slide:nth-child(13) .team-image {
+  filter: drop-shadow(10px 10px 0px #FBBC04);
+}
+
+#team .slide:nth-child(2) .team-image,
+#team .slide:nth-child(8) .team-image,
+#team .slide:nth-child(14) .team-image {
+  filter: drop-shadow(10px 10px 0px #0F9D58);
+}
+
+#team .slide:nth-child(3) .team-image,
+#team .slide:nth-child(9) .team-image {
+  filter: drop-shadow(10px 10px 0px #EA4335);
+}
+
+#team .slide:nth-child(4) .team-image,
+#team .slide:nth-child(10) .team-image {
+  filter: drop-shadow(10px 10px 0px #4285F4);
+}
+
+#team .slide:nth-child(5) .team-image,
+#team .slide:nth-child(11) .team-image {
+  filter: drop-shadow(10px 10px 0px #000);
+}
+
+#team .slide:nth-child(6) .team-image,
+#team .slide:nth-child(12) .team-image {
+  filter: drop-shadow(10px 10px 0px #FBBC04);
+}
+
+/* .... */
+/* remove old styles below (replaced by rules above) */
+
 [class^="col-"]:nth-child(1) .team-image,
 [class^="col-"]:nth-child(7) .team-image,
 [class^="col-"]:nth-child(13) .team-image {
@@ -624,8 +659,6 @@ section header {
   left: 0;
 }
 
-
-
 .view-team {
   display: flex;
   justify-content: center;
@@ -657,16 +690,12 @@ section header {
 
 #team .slide {
   width: 325px;
-  /* height: 400px; */
+  height: 375px;
 }
 
 #team .slide a {
   text-decoration: none;
 }
-
-/* #team .carouselWrapper>ul {
-  grid-template-columns: repeat(14, 1fr);
-} */
 
 #team .slide img {
   width: 100%;
@@ -674,6 +703,12 @@ section header {
 
 #team .carousel-button {
   border: 3px solid #000;
+}
+
+@media screen and (max-width: 600px) {
+  #team .slide {
+    height: 450px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -818,6 +853,13 @@ header.hidden-sm {
   grid-template-columns: repeat(14, 1fr);
 }
 
+@media screen and (max-width: 600px) {
+  #team .carouselWrapper>ul {
+    gap: 2em;
+  }
+}
+
+
 #testimonials .carouselWrapper>ul::-webkit-scrollbar,
 #events .carouselWrapper>ul::-webkit-scrollbar,
 #team .carouselWrapper>ul::-webkit-scrollbar,
@@ -894,9 +936,7 @@ header.hidden-sm {
   .vector-blocks {
     display: none;
   }
-}
 
-@media screen and (max-width: 600px) {
   #testimonials .slide {
     height: auto;
   }
@@ -1032,6 +1072,13 @@ header.hidden-sm {
     width: var(--carousel-width);
   }
 
+  #team ul[data-slides] {
+    --carousel-width: 500px;
+    transform: rotate(-90deg) translateY(calc(-1*var(--carousel-width)));
+    transform-origin: right top;
+    width: var(--carousel-width);
+  }
+
   #join ul[data-slides] {
     --carousel-width: 950px;
     transform: rotate(-90deg) translateY(calc(-1*var(--carousel-width)));
@@ -1050,6 +1097,10 @@ header.hidden-sm {
     max-height: 950px;
   }
 
+  #team .carouselWrapper {
+    height: 500px;
+  }
+
   #testimonials .carouselWrapper {
     max-height: 600px;
   }
@@ -1065,6 +1116,7 @@ header.hidden-sm {
 
   #testimonials .slide,
   #events .slide,
+  #team .slide,
   #join .slide {
     transform: rotate(90deg);
   }
@@ -1084,11 +1136,22 @@ header.hidden-sm {
   }
 
   #testimonials .carouselWrapper>ul,
-  #events .carouselWrapper>ul,
-  #team .carouselWrapper>ul,
-  #join .carouselWrapper>ul {
+  #events .carouselWrapper>ul {
+  /* #team .carouselWrapper>ul, */
     grid-template: none;
     grid-template-rows: repeat(5, 1fr);
+  }
+
+  /* #join .carouselWrapper>ul {
+    grid-template: none;
+    grid-template-rows: repeat(4, 1fr);
+  } */
+    
+  #team .carouselWrapper>ul {
+    grid-template: none;
+    grid-template-rows: repeat(14, 1fr);
+    justify-content: center;
+    /* border: 1px solid; */
   }
 
   #testimonials .carousel-buttons,
