@@ -300,6 +300,14 @@ const technicalTeam = [
     linkedInLink: "",
   },
   {
+    name: "Jude Tochy",
+    role: "Project Manager",
+    picture: "/images/assets/team/Technical/JudeTochy.jpg",
+    birthday: "",
+    twitterHandle: "",
+    linkedInLink: "",
+  },
+  {
     name: "Olayinka Adebisi",
     role: "",
     picture: "/images/assets/team/Technical/OlayinkaAdebisi.jpeg",
@@ -566,7 +574,7 @@ const teamNameToArrayMapper = {
 const checkForLead = (text) => {
   const role = text.toLowerCase();
   return (
-    role.includes("manager") ||
+    (role.includes("manager") && !role.includes("project manager")) ||
     (role.includes("lead") && !role.includes("co-lead"))
   );
 };
