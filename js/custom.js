@@ -144,7 +144,7 @@ const designTeam = [
 
 const contentTeam = [
   {
-    name: "Jesus Akanle ",
+    name: "Jesus Akanle",
     role: "Content Lead",
     picture: "/images/assets/team/Content/JesusAkanle.jpeg",
     birthday: "August 6",
@@ -529,21 +529,6 @@ const eventsTeam = [
   },
 ];
 
-const teamNameToArrayMapper = {
-  "ML Team": MLTeam,
-  "CMUL Team": CMULTeam,
-  "Design Team": designTeam,
-  "Content Team": contentTeam,
-  "Publicity Team": publicityTeam,
-  "Sponsorship Team": sponsorshipTeam,
-  "Community Team": communityTeam,
-  "Technical Team": technicalTeam,
-  "Programs Team": programsTeam,
-  "Finance Team": financeTeam,
-  "Tutors Team": tutorsTeam,
-  "Events Team": eventsTeam,
-};
-
 const GDSCLead = {
   name: "Hafsah Anibaba",
   role: "GDSC Lead",
@@ -562,17 +547,47 @@ const GDSCCoLead = {
   linkedInLink: "",
 };
 
+const teamNameToArrayMapper = {
+  "All teams leads": [],
+  "ML Team": MLTeam,
+  "CMUL Team": CMULTeam,
+  "Design Team": designTeam,
+  "Content Team": contentTeam,
+  "Publicity Team": publicityTeam,
+  "Sponsorship Team": sponsorshipTeam,
+  "Community Team": communityTeam,
+  "Technical Team": technicalTeam,
+  "Programs Team": programsTeam,
+  "Finance Team": financeTeam,
+  "Tutors Team": tutorsTeam,
+  "Events Team": eventsTeam,
+};
+
+const checkForLead = (text) => {
+  const role = text.toLowerCase();
+  return (
+    role.includes("manager") ||
+    (role.includes("lead") && !role.includes("co-lead"))
+  );
+};
+
+const allTeamsLeads = Object.values(teamNameToArrayMapper)
+  .flat()
+  .filter((lead) => checkForLead(lead.role));
+
+allTeamsLeads = [GDSCCoLead, ...allTeamsLeads];
+teamNameToArrayMapper["All teams leads"] = allTeamsLeads;
+
 const teamsAsideUl = document.querySelector("#teams-aside > ul");
 const teamLeadContainer = document.querySelector("#team-lead");
 const selectionColours = ["#FAAB21", "#4285F4"];
-const randomColour =
-  selectionColours[Math.floor(Math.random() * selectionColours.length)];
 const defaultColor = "#acaeb0";
 
 const teamLeadImage = document.querySelector("#team-lead-image");
 const teamLeadName = document.querySelector("#team-lead-name");
 const teamLeadRole = document.querySelector("#team-lead-role");
 
+const teamMembersHeader = document.querySelector("#team-members-header");
 const teamMembers = document.querySelector("#team-members");
 
 const setColor = (element, color) => {
@@ -590,64 +605,37 @@ const setTeamLead = (teamLead) => {
   teamLeadRole.textContent = teamLead.role;
 };
 
-const checkForLead = (text) => {
-  const role = text.toLowerCase();
-  return (
-    role.includes("manager") ||
-    (role.includes("lead") && !role.includes("co-lead"))
-  );
-};
+for (let li of teamsAsideUl.children) {
+  const randomColour =
+    selectionColours[Math.floor(Math.random() * selectionColours.length)];
 
-for (let i of teamsAsideUl.children) {
-  if (i.textContent.trim() === "ML Team") {
-    setColor(i, randomColour);
+  if (li.textContent.trim() === "All teams leads") {
+    setColor(li, randomColour);
   } else {
-    setColor(i, defaultColor);
+    setColor(li, defaultColor);
   }
 
-  i.addEventListener("click", () => {
-    for (let j of teamsAsideUl.children) {
-      if (j === i) {
-        setColor(j, randomColour);
-        const teamName = j.textContent.trim();
+  li.addEventListener("click", () => {
+    for (let i of teamsAsideUl.children) {
+      if (i === li) {
+        setColor(i, randomColour);
+        const teamName = i.textContent.trim();
         const teamArray = teamNameToArrayMapper[teamName];
         let teamLeadSet = false;
 
-        for (let k of teamArray) {
-          const role = k.role.toLowerCase();
+        if (li.textContent.trim() === "All teams leads") {
+          setTeamLead(GDSCLead);
+          teamMembersHeader.textContent = "Teams Leads";
+          teamLeadSet = true;
 
-          if (
-            role.includes("manager") ||
-            (role.includes("lead") && !role.includes("co-lead"))
-          ) {
-            setTeamLead(k);
-            teamLeadSet = true;
-            break;
-          }
-        }
+          for (let i in teamArray) {
+            if (teamArray[i].picture.trim() === "") {
+              teamArray[i].picture = "/images/assets/team/avatar.png";
+            }
 
-        if (!teamLeadSet && teamArray.length > 0) {
-          setTeamLead(teamArray[0]);
-        }
-
-        const teamArrayWithoutLead = teamArray.filter(
-          (member) => !checkForLead(member.role)
-        );
-
-        if (teamArrayWithoutLead.length === 0) {
-          teamMembers.innerHTML = `<p class="no-team-members">No team members</p>`;
-        }
-
-        for (let i in teamArrayWithoutLead) {
-          if (teamArrayWithoutLead[i].picture.trim() === "") {
-            teamArrayWithoutLead[i].picture = "/images/assets/team/avatar.png";
-          }
-          if (teamArrayWithoutLead[i].role.trim() === "") {
-            teamArrayWithoutLead[i].role = "Member";
-          }
-          teamMembers.innerHTML = teamArrayWithoutLead
-            .map(
-              (member) => `
+            teamMembers.innerHTML = teamArray
+              .map(
+                (member) => `
               <div>
                 <img
                   src="${member.picture}"
@@ -660,11 +648,65 @@ for (let i of teamsAsideUl.children) {
                 </div>
               </div>
             `
-            )
-            .join("");
+              )
+              .join("");
+          }
+        } else {
+          teamMembersHeader.textContent = "Members";
+          for (let k of teamArray) {
+            const role = k.role.toLowerCase();
+
+            if (
+              role.includes("manager") ||
+              (role.includes("lead") && !role.includes("co-lead"))
+            ) {
+              setTeamLead(k);
+              teamLeadSet = true;
+              break;
+            }
+          }
+
+          if (!teamLeadSet && teamArray.length > 0) {
+            setTeamLead(teamArray[0]);
+          }
+
+          const teamArrayWithoutLead = teamArray.filter(
+            (member) => !checkForLead(member.role)
+          );
+
+          if (teamArrayWithoutLead.length === 0) {
+            teamMembers.innerHTML = `<p class="no-team-members">No team members</p>`;
+          }
+
+          for (let i in teamArrayWithoutLead) {
+            if (teamArrayWithoutLead[i].picture.trim() === "") {
+              teamArrayWithoutLead[i].picture =
+                "/images/assets/team/avatar.png";
+            }
+            if (teamArrayWithoutLead[i].role.trim() === "") {
+              teamArrayWithoutLead[i].role = "Member";
+            }
+            teamMembers.innerHTML = teamArrayWithoutLead
+              .map(
+                (member) => `
+              <div>
+                <img
+                  src="${member.picture}"
+                  alt="${member.name}"
+                  class="member-image"
+                />
+                <div style="text-align: left">
+                  <h2 class="member-name">${member.name}</h2>
+                  <p class="member-role">${member.role}</p>
+                </div>
+              </div>
+            `
+              )
+              .join("");
+          }
         }
       } else {
-        setColor(j, defaultColor);
+        setColor(i, defaultColor);
       }
     }
   });
