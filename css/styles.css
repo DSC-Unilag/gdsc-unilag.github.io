@@ -676,6 +676,183 @@ nav ul li a:hover {
 }
 
 /* TEAMS END */
+/* CONTACT START */
+.ContactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  padding: 17px 13px;
+  background-color: white;
+  font-family: Roboto;
+}
+
+.Sidebar {
+  border-radius: 20px;
+  background: #31a858;
+  padding-top: 48px;
+  padding-inline: 30px;
+  padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  color: #fff;
+  font-style: normal;
+  line-height: 23.935px;
+}
+
+.Sidebar h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.Sidebar h2 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+section.Sidebar > div > h2 + span {
+  font-size: 13.056px;
+  font-weight: 500;
+}
+
+section.Sidebar > div > h2 + div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+section.Sidebar > div > h2 + div > a {
+  text-decoration: none;
+}
+
+section.Sidebar > div > h2 + div > a > svg {
+  width: 17px;
+  min-height: 17px;
+}
+
+.ContactContainer > form {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 32px;
+  padding-inline: 16px;
+}
+
+.formItem {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  max-width: calc(100vw - 48px);
+}
+
+.formItem > label {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33px;
+  margin-bottom: 14px;
+}
+
+.formItem > label::placeholder,
+.formItem > textarea::placeholder {
+  color: #aeaeae;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33px;
+}
+
+.formItem > input {
+  border-radius: 10px;
+  border: 1px solid #aeaeae;
+  min-height: 50px;
+  padding-left: 10px;
+}
+
+#phoneNumber {
+  padding: 12px 10px;
+  padding-left: 50px;
+  width: 100%;
+  border: 1px solid #aeaeae;
+  border-radius: 10px;
+}
+
+.formItem > textarea {
+  border-radius: 20px;
+  border: 1px solid #aeaeae;
+  min-height: 122px;
+  padding: 12px 10px;
+  line-height: normal;
+  font-size: 20px;
+  line-height: 33px;
+  max-width: calc(100vw - 48px);
+}
+
+.formItem > textarea,
+.formItem > textarea::placeholder {
+  font-family: Roboto;
+}
+
+#privacyCheckBoxContainer > label {
+  color: #aeaeae;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 25px;
+}
+
+#privacyCheckBoxContainer > label > a {
+  color: #000;
+  text-underline-offset: 6px;
+}
+
+#submitMessage {
+  border-radius: 9px;
+  background: #31a858;
+  color: #fff;
+  font-size: 20px;
+  line-height: 14.816px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  width: 100%;
+}
+
+@media (width >= 769px) {
+  .ContactContainer {
+    padding: 52px 36px;
+    flex-direction: row;
+  }
+
+  .Sidebar {
+    padding-left: 53px;
+    padding-right: 40px;
+    flex: 3;
+  }
+
+  section.Sidebar > div > h2 + div > a > svg {
+    width: 30px;
+    min-height: 30px;
+  }
+
+  .ContactContainer > form {
+    flex: 5;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+  }
+
+  form > :nth-child(n + 4) {
+    grid-column: span 2;
+  }
+}
+
+@media (width >= 1280px) {
+  .ContactContainer > form {
+    column-gap: 7%;
+  }
+}
+
+/* CONTACT END */
 
 /* html, body {
   -webkit-font-smoothing: antialiased;
