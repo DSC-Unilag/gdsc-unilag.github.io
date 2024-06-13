@@ -717,6 +717,11 @@ section.Sidebar > div > h2 + span {
   font-weight: 500;
 }
 
+section.Sidebar > div > h2 + span > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 section.Sidebar > div > h2 + div {
   display: flex;
   gap: 10px;
