@@ -377,6 +377,9 @@ nav ul li a.active, nav ul li a:hover {
 .answer {
   display: none;
 }
+.answer ul {
+  padding: 10px 0 0 20px;
+}
 .faq-card:nth-child(1), .faq-card:nth-child(5) {
   background-color: #B3CEFB;
   border: 1px #b4d1ff solid;
