@@ -97,6 +97,11 @@ nav ul li a.active, nav ul li a:hover {
   color: #4285F4;
   background: #fff;
 }
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+}
 .hero {
   position: relative;
   padding: 60px 25px;
@@ -387,6 +392,84 @@ nav ul li a.active, nav ul li a:hover {
 .faq-card:nth-child(4), .faq-card:nth-child(8) {
   background-color: #FBD9D7;
   border: 1px #ffb4b0 solid;
+}
+.privacy-hero {
+  display: flex;
+  justify-content: center;
+  background: #31A858;
+  padding: 30px;
+  color: #fff;
+  border-radius: 18.17px;
+  margin: 40px 0;
+}
+.privacy h1 {
+  text-align: center;
+}
+.privacy h2 {
+  margin: 20px 0;
+}
+.privacy p {
+  margin: 20px 0;
+}
+.contact {
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+.contact .sidebar {
+  padding: 30px;
+  color: #fff;
+  background: #0F9D58;
+  border-radius: 20px;
+  width: 30%;
+}
+.contact p.title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.contact .info-container {
+  margin: 20px 0;
+  font-size: 15px;
+}
+.contact .form {
+  flex: 1
+}
+.contact .row {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.contact .input {
+  flex: 1;
+}
+.contact label {
+  font-weight: bold;
+}
+.contact input:not(.checkbox), .contact textarea {
+  display: block;
+  padding: 10px;
+  margin: 10px 0 20px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #AEAEAE;
+}
+.contact .confirm {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.submit {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background: #31A858;
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  border-radius: 15px;
 }
 /* html, body {
   -webkit-font-smoothing: antialiased;
