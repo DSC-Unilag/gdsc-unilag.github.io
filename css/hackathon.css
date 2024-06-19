@@ -246,16 +246,15 @@ nav ul li a:hover {
 #hero .scribbles {
     width: 6rem;
     height: 6rem;
+    position: absolute;
 }
 
 .scribbles.upper-left {
-    position: absolute;
     top: 0;
     left: 5%;
 }
 
 .scribbles.upper-right {
-    position: absolute;
     top: 0;
     right: 5%;
 }
@@ -263,7 +262,6 @@ nav ul li a:hover {
 .scribbles.bottom-right {
     width: 10rem;
     height: 10rem;
-    position: absolute;
     bottom: 0;
     right: 0;
 }
@@ -319,7 +317,7 @@ nav ul li a:hover {
     #hero .content {
         column-gap: 0.5em;
     }
-    
+
     #hero .content .date {
         grid-column: span 2;
         font-size: 0.8rem;
@@ -343,6 +341,12 @@ nav ul li a:hover {
 
 section.event-info {
     margin: 3rem 0;
+    border: 1px solid saddlebrown;
+    padding: 3rem 0;
+}
+
+.event-info .scribbles {
+    position: absolute;
 }
 
 .event-info .content {
