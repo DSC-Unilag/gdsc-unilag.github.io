@@ -485,6 +485,9 @@ nav ul li a.active, nav ul li a:hover {
     width: 100%;
   }
 }
+.privacy ul {
+  margin-left: 20px;
+}
 /* html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
