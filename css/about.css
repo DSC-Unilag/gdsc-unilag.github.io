@@ -15,7 +15,8 @@ body {
 
 .section-title {
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
 }
 
 .section-header {
@@ -155,6 +156,7 @@ nav ul li a:hover {
   grid-template-columns: 4fr 5fr;
   gap: 3em;
   position: relative;
+  padding-bottom: 5rem;
 }
 
 #who-we-are .content .scribbles {
@@ -194,32 +196,73 @@ nav ul li a:hover {
 }
 
 .who-we-are__img .col:first-child {
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .who-we-are__text {
   padding: 5rem 2rem 2rem 2rem;
 }
 
-.who-we-are__text p {
+.blockquote {
+  box-sizing: border-box;
+}
+
+.blockquote__text:not(.blockquote__text-author)::before,
+.blockquote__text:not(.blockquote__text-author)::after {
+  font-size: 6rem;
+  /* margin-top: -1rem; */
+  margin-bottom: -5rem;
+  display: block;
+  font-family: "Gelasio", serif;
+  font-style: italic;
+}
+
+.blockquote__text:not(.blockquote__text-author)::before {
+  content: "\201c";
+}
+
+.blockquote__text:not(.blockquote__text-author)::after {
+  /* content: "\201d"; */
+}
+
+.blockquote__text {
   color: #4b4b4b;
-  font-size: 1.8rem;
+  font-style: italic;
+  font-size: 1.3rem;
   margin-top: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.5;
+}
+
+.who-we-are__text .blockquote__text-author {
+  font-weight: bold;
+  font-style: normal;
+  text-align: right;
+}
+
+.blockquote__text-author::before {
+  content: "\2014\0020";
 }
 
 @media only screen and (max-width: 1100px) {
- #who-we-are .content {
+  #who-we-are .content {
     grid-template-columns: 1fr;
     justify-items: center;
     padding: 2.5rem 0;
   }
 
- .who-we-are__img,
- .who-we-are__text {
+  .blockquote::before {
+    /* font-size: 6rem; */
+  }
+  
+
+  .who-we-are__img,
+  .who-we-are__text {
     width: 85%;
     max-width: 700px;
   }
-  
+
   .who-we-are__img img {
     width: 100%;
   }
@@ -228,7 +271,9 @@ nav ul li a:hover {
     padding: 1rem;
   }
 
-  .who-we-are__text p {
+  .who-we-are__text p,
+  .who-we-are__text blockquote,
+  .who-we-are__text address {
     font-size: 1.7rem;
   }
 }
@@ -238,7 +283,9 @@ nav ul li a:hover {
     margin: 1rem 0;
   }
 
-  .who-we-are__text p {
+  .who-we-are__text p,
+  .who-we-are__text blockquote,
+  .who-we-are__text address {
     font-size: 1.2rem;
   }
 
@@ -285,9 +332,9 @@ nav ul li a:hover {
 }
 
 @media only screen and (max-width: 1100px) {
- #join-community .content {
-  padding: 4rem 2rem;
-  max-width: 700px;
+  #join-community .content {
+    padding: 4rem 2rem;
+    max-width: 700px;
   }
 
   #join-community {
@@ -297,7 +344,7 @@ nav ul li a:hover {
   #join-community .content h3 {
     font-size: 1.7rem;
   }
-  
+
   #join-community .content button {
     background-color: #0a2212;
     color: #fff;
