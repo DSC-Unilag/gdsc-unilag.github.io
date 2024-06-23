@@ -408,11 +408,14 @@ nav ul li a.active, nav ul li a:hover {
 .privacy h1 {
   text-align: center;
 }
-.privacy h2 {
+.privacy h2, h3 {
   margin: 20px 0;
 }
 .privacy p {
   margin: 20px 0;
+}
+.privacy ul {
+  margin-left: 20px;
 }
 .contact {
   display: flex;
@@ -484,9 +487,6 @@ nav ul li a.active, nav ul li a:hover {
   .contact .form {
     width: 100%;
   }
-}
-.privacy ul {
-  margin-left: 20px;
 }
 /* html, body {
   -webkit-font-smoothing: antialiased;
