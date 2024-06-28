@@ -723,6 +723,45 @@ for (let li of teamsAsideUl.children) {
 // =============
 // TEAMS JS ENDS
 // =============
+=======
+closeNav.addEventListener("click", ()=>{
+	document.querySelector("nav").style.display = 'none';
+})
+menuBar.addEventListener("click", ()=>{
+	document.querySelector("nav").style.display = 'block';
+})
+document.addEventListener('click', function(e) {
+	const sidebar = document.querySelector("nav");
+	const closeNav = document.querySelector("nav .close")
+	if (e.target !== menuBar && e.target !== sidebar) {
+		sidebar.style.display = 'none';
+		console.log('=======')
+	}
+})
+faqs = document.querySelectorAll("faq-card")
+
+
+// Select the FAQ container
+const faqContainer = document.querySelector('.faq-container');
+        
+// Select all question-expand elements within the FAQ container
+const questionExpandElements = faqContainer.querySelectorAll('.question-expand');
+
+// Add event listeners to each question-expand element
+questionExpandElements.forEach(item => {
+	item.addEventListener('click', () => {
+		const answer = item.nextElementSibling;
+
+		if (answer) {
+			if (answer.style.display === 'block') {
+				answer.style.display = 'none';
+			} else {
+				answer.style.display = 'block';
+			}
+		}
+	});
+});
+
 
 // $(window).on("load", function() {
 // 	"use strict";
