@@ -723,7 +723,7 @@ for (let li of teamsAsideUl.children) {
 // =============
 // TEAMS JS ENDS
 // =============
-=======
+
 closeNav.addEventListener("click", ()=>{
 	document.querySelector("nav").style.display = 'none';
 })
