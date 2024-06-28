@@ -24,6 +24,29 @@ document.addEventListener('click', function(e) {
 		console.log('=======')
 	}
 })
+faqs = document.querySelectorAll("faq-card")
+
+
+// Select the FAQ container
+const faqContainer = document.querySelector('.faq-container');
+        
+// Select all question-expand elements within the FAQ container
+const questionExpandElements = faqContainer.querySelectorAll('.question-expand');
+
+// Add event listeners to each question-expand element
+questionExpandElements.forEach(item => {
+	item.addEventListener('click', () => {
+		const answer = item.nextElementSibling;
+
+		if (answer) {
+			if (answer.style.display === 'block') {
+				answer.style.display = 'none';
+			} else {
+				answer.style.display = 'block';
+			}
+		}
+	});
+});
 
 // $(window).on("load", function() {
 // 	"use strict";
