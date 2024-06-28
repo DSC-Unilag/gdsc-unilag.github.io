@@ -163,6 +163,7 @@ section.intro {
 
 .scribbles {
     position: absolute;
+    width: 14rem;
 }
 
 .scribbles.left {
@@ -176,22 +177,28 @@ section.intro {
     top: 0;
 }
 
+.scribbles.agenda-scribble {
+    bottom: 0;
+    right: 0;
+}
+
 section.intro .content {
-    width: 50%;
+    width: 60%;
     margin: 4rem auto;
     padding: 1rem 0;
     text-align: center;
 }
 
 .intro .content h1 {
-    /* font-size: 3.7rem; */
+    font-size: 2.5rem;
     font-weight: bold;
     text-shadow: 1px 1px 1px grey;
+    margin-bottom: 2rem;
 }
 
 .intro .content p {
-    font-weight: 400;
-    font-size: 1.35rem;
+    /* font-weight: 500; */
+    font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -221,124 +228,100 @@ section.intro .content {
     }
 
     .intro .content p {
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .intro .content h1 {
+        font-size: 2rem;
     }
 }
 
 /* intro ends */
 
-/* program cards styling */
+/* program text start */
 
-.programs {
+section.programs {
+    margin: 3rem 0;
     position: relative;
 }
 
 .programs .vector-blocks {
     position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.program {
-    margin: 3rem 0;
-    padding: 3rem 0;
-}
-
-.program h5 {
-    font-weight: bold;
-}
-
-.program p {
-    font-weight: 500;
-}
-
-.program.upcoming {
-    position: relative;
-}
-
-.upcoming .scribbles {
-    position: absolute;
     right: 0;
     bottom: 0;
-    transform: translateY(50%);
-    z-index: -10;
-}
-
-.attend, .rank {
-    padding: 0.8rem 1em;
-    font-weight: bold;
-    border-radius: 25px;
-    text-decoration: none;
 }
 
 .programs .content {
     width: 80%;
+    margin: auto;
 }
 
-.card.red i,
-.card.red .rank {
-    color: #eb4335;
+.programs .content > div {
+    margin: 3rem 0;
 }
 
-.card.red .rank {
-    background-color: #fbd9d7;
+.programs h5 {
+    font-size: 1.65rem;
+    font-weight: bold;
 }
 
-.card.red .attend {
-    background-color: #eb4335;
-    color: #fff;
+.programs h6 {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.card.yellow i,
-.card.yellow .rank {
-    color: #faab21;
-}
-
-.card.yellow .rank {
-    background-color: #feeed3;
-}
-
-.card.yellow .attend {
-    background-color: #faab21;
-    color: #fff;
-}
-
-.card.green i,
-.card.green .rank {
-    color: #31a858;
-}
-
-.card.green .rank {
-    background-color: #d6eede;
-}
-
-.card.green .attend {
-    background-color: #31a858;
-    color: #fff;
-}
-
-.card.blue i,
-.card.blue .rank {
-    color: #4285f4;
-}
-
-.card.blue .rank {
-    background-color: #d9e7fd;
-}
-
-.card.blue .attend {
-    background-color: #4285f4;
-    color: #fff;
+.programs p,
+.programs li {
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 500;
+    font-size: 1.45rem;
 }
 
 @media only screen and (max-width: 768px) {
-    .program {
-        margin: 1.5rem 0;
-        padding: 1.5rem 0;
+
+    section.programs {
+        margin: 1rem 0;
+        padding: 1rem 0;
+    }
+
+    .programs .content {
+        width: 90%;
+    }
+
+    .programs h5 {
+        font-size: 1.55rem;
+        font-weight: bold;
+    }
+
+    .programs p,
+    .programs li {
+        text-align: left;
+        text-justify: auto;
+        font-size: 1.35rem;
+    }
+
+    .programs .content > div {
+        /* margin: 5rem 0; */
+    }
+
+    .content > div {
+        margin-bottom: 5rem;
+    }
+
+    .demo h5,
+    .functionality h5,
+    .game h5,
+    .challenge h5 {
+        text-align: center;
     }
 }
 
-/* program cards styling ends */
+.demo__img {
+    width: 100%;
+}
+
+/* program text end */
 
 /* Start of footer section */
 
